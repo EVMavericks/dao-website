@@ -1,9 +1,9 @@
-import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import React, { FunctionComponent, HTMLProps } from "react";
+import { Fragment, FunctionComponent, HTMLProps } from "react";
+import { BASE } from "src/config/env";
+import CloseIcon from "~icons/mdi/close";
 import GithubIcon from "~icons/mdi/github";
 import MenuIcon from "~icons/mdi/menu";
-import CloseIcon from "~icons/mdi/close";
 
 const navigation = [
   // { name: "Product", href: "#" },
@@ -29,7 +29,7 @@ export const Navbar: FunctionComponent<NavbarProps> = ({ className = "" }) => {
                   <span className="sr-only">EVMavericks</span>
                   <img
                     className="h-8 w-auto sm:h-12"
-                    src="/OG_Lion_auto_x2_clean2.svg"
+                    src={`${BASE}/assets/evmavericks.svg`}
                     alt=""
                   />
                 </a>
@@ -37,7 +37,7 @@ export const Navbar: FunctionComponent<NavbarProps> = ({ className = "" }) => {
                   <span className="sr-only">Ethereum</span>
                   <img
                     className="h-8 w-auto sm:h-10"
-                    src="/ethereum-icon-indigo.svg"
+                    src={`${BASE}/assets/ethereum.svg`}
                     alt=""
                   />
                 </a>
@@ -63,7 +63,8 @@ export const Navbar: FunctionComponent<NavbarProps> = ({ className = "" }) => {
             <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
               <span className="inline-flex rounded-md shadow">
                 <a
-                  href="#"
+                  href="https://github.com/EVMavericks/website-draft-RisingPaw"
+                  target="_blank"
                   className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500"
                 >
                   <GithubIcon />

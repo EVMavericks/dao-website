@@ -1,10 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Hero, TableSection, FaqSection } from "src/components/pages/index";
-import { Footer } from "src/components/layout";
+import { Footer, Navbar } from "src/components/layout";
 ---
 
 <Layout title="Decentralization is a public good">
+  <Navbar />
   <main>
     <Hero />
     <TableSection />
