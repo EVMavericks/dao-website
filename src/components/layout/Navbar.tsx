@@ -14,7 +14,7 @@ export type NavbarProps = HTMLProps<HTMLDivElement>;
 
 export const Navbar: FunctionComponent<NavbarProps> = ({ className = "" }) => {
   return (
-    <div className="relative pt-4">
+    <div className="relative pt-4 z-10">
       <Popover>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <nav
