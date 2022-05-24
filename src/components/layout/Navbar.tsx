@@ -31,7 +31,7 @@ export const Navbar: FunctionComponent<NavbarProps> = ({ className = "" }) => {
                 >
                   <span className="sr-only">EVMavericks</span>
                   <img
-                    className="h-8 w-auto sm:h-12 pr-2"
+                    className="h-8 w-auto sm:h-12 pr-2 fill-green-700 hover:fill-green-600"
                     src={`${BASE}/assets/evmavericks.svg`}
                     alt=""
                   />

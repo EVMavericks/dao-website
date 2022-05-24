@@ -2,6 +2,8 @@ import { FunctionComponent } from "react";
 import { Table } from "./Table";
 import { TableFooter } from "./TableFooter";
 
+const DATE = new Date().toUTCString();
+
 export const TableSection: FunctionComponent = () => {
   return (
     <section>
@@ -14,8 +16,7 @@ export const TableSection: FunctionComponent = () => {
           <Table />
           <div className="relative py-4 text-center text-gray-400 text-sm">
             Snapshot taken from{" "}
-            <a href="https://rated.network">rated.network</a> API on{" "}
-            {new Date().toUTCString()}
+            <a href="https://rated.network">rated.network</a> API on {DATE}
           </div>
         </div>
       </div>
