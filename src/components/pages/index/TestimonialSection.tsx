@@ -16,7 +16,7 @@ export const TestimonialSection: FunctionComponent = () => {
         </div>
         <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
           <p className="text-lg text-gray-500">
-            The Ethereum protocol that launched in 2015 has had incredible
+            @TODO The Ethereum protocol that launched in 2015 has had incredible
             success. But the Ethereum community always expected that a few key
             upgrades would be necessary to unlock Ethereum's full potential.
           </p>
