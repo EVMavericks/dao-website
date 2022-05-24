@@ -14,66 +14,67 @@
   }
   ```
 */
-import {
-  ChatAltIcon,
-  DocumentReportIcon,
-  HeartIcon,
-  InboxIcon,
-  PencilAltIcon,
-  ReplyIcon,
-  SparklesIcon,
-  TrashIcon,
-  UsersIcon,
-} from "@heroicons/react/outline";
+// import {
+//   ChatAltIcon,
+//   DocumentReportIcon,
+//   HeartIcon,
+//   InboxIcon,
+//   PencilAltIcon,
+//   ReplyIcon,
+//   SparklesIcon,
+//   TrashIcon,
+//   UsersIcon,
+// } from "@heroicons/react/outline";
+import EarthIcon from "~icons/mdi/earth";
 
 const features = [
   {
     name: "Unlimited Inboxes",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: InboxIcon,
+    icon: EarthIcon,
   },
   {
     name: "Manage Team Members",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: UsersIcon,
+    icon: EarthIcon,
   },
   {
     name: "Spam Report",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: TrashIcon,
+    icon: EarthIcon,
   },
   {
     name: "Compose in Markdown",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: PencilAltIcon,
+    icon: EarthIcon,
   },
   {
     name: "Team Reporting",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: DocumentReportIcon,
+    icon: EarthIcon,
   },
   {
     name: "Saved Replies",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: ReplyIcon,
+    icon: EarthIcon,
   },
   {
     name: "Email Commenting",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: ChatAltIcon,
+    icon: EarthIcon,
   },
   {
     name: "Connect with Customers",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: HeartIcon,
+    icon: EarthIcon,
   },
 ];
 const metrics = [
