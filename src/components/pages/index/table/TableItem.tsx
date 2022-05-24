@@ -3,6 +3,7 @@ import type entities from "src/data/entities.json";
 import meta from "src/data/static.json";
 import TwitterIcon from "~icons/mdi/twitter";
 import { getTweetLink } from "src/utils";
+import { BASE } from "src/config/env";
 
 export type Entity = typeof entities.data[0];
 const entityMetaById = Object.fromEntries(
@@ -48,7 +49,7 @@ export const TableItem: FunctionComponent<TableItemProps> = ({ entity }) => {
           <div className="h-10 w-10 flex-shrink-0">
             <img
               className="h-10 w-10 rounded-full"
-              src="entities/lido.svg"
+              src={`${BASE}/entities/lido.svg`}
               alt=""
             />
           </div>
