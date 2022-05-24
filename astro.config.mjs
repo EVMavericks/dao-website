@@ -6,6 +6,6 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), tailwind()],
-  site: 'https://evmavericks.github.io/website-draft-RisingPaw',
+  site: 'https://evmavericks.github.io',
   base: '/website-draft-RisingPaw'
 });
