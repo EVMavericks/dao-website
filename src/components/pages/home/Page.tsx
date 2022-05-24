@@ -14,53 +14,18 @@
   }
   ```
 */
-import { Fragment } from "react";
-import { Popover, Transition } from "@headlessui/react";
 import {
-  AnnotationIcon,
-  ChatAlt2Icon,
   ChatAltIcon,
   DocumentReportIcon,
   HeartIcon,
   InboxIcon,
-  MenuIcon,
   PencilAltIcon,
-  QuestionMarkCircleIcon,
   ReplyIcon,
   SparklesIcon,
   TrashIcon,
   UsersIcon,
-  XIcon,
 } from "@heroicons/react/outline";
-import { ChevronDownIcon } from "@heroicons/react/solid";
 
-const solutions = [
-  {
-    name: "Inbox",
-    description:
-      "Get a better understanding of where your traffic is coming from.",
-    href: "#",
-    icon: InboxIcon,
-  },
-  {
-    name: "Messaging",
-    description: "Speak directly to your customers in a more meaningful way.",
-    href: "#",
-    icon: AnnotationIcon,
-  },
-  {
-    name: "Live Chat",
-    description: "Your customers' data will be safe and secure.",
-    href: "#",
-    icon: ChatAlt2Icon,
-  },
-  {
-    name: "Knowledge Base",
-    description: "Connect with third-party tools that you're already using.",
-    href: "#",
-    icon: QuestionMarkCircleIcon,
-  },
-];
 const features = [
   {
     name: "Unlimited Inboxes",
