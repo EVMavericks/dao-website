@@ -12,22 +12,34 @@ export const TableFooter: FunctionComponent = ({ className = "" }) => {
         </h2>
         <div className=" mt-8 grid grid-cols-2 gap-8 md:grid-cols-36 lg:grid-cols-3 mx-auto">
           <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-            <span className="text-center text-gray-400 text-sm font-semibold uppercase tracking-wide">
+            <a
+              href="https://www.reddit.com/r/ethfinance"
+              target="_blank"
+              className="text-center text-gray-400 hover:text-gray-500 text-sm font-semibold uppercase tracking-wide"
+            >
               <RedditIcon className="inline-flex h-8 w-auto" />
               &nbsp; r/ethfinance
-            </span>
+            </a>
           </div>
           <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-            <span className="text-center text-gray-400 text-sm font-semibold uppercase tracking-wide">
+            <a
+              href="https://www.reddit.com/r/ethstaker"
+              target="_blank"
+              className="text-center text-gray-400 hover:text-gray-500 text-sm font-semibold uppercase tracking-wide"
+            >
               <RedditIcon className="inline-flex h-8 w-auto" />
               &nbsp; r/ethstaker
-            </span>
+            </a>
           </div>
           <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-            <span className="text-center text-gray-400 text-sm font-semibold uppercase tracking-wide">
+            <a
+              href="https://discord.gg/EVMavericks"
+              target="_blank"
+              className="text-center text-gray-400 hover:text-gray-500 text-sm font-semibold uppercase tracking-wide"
+            >
               <DiscordIcon className="inline-flex h-8 w-auto" />
               &nbsp; EVMavericks
-            </span>
+            </a>
           </div>
         </div>
       </div>

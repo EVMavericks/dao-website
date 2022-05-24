@@ -9,15 +9,6 @@ const entityMetaById = Object.fromEntries(
   meta.data.map((value) => [value.id, value])
 );
 
-// href="https://twitter.com/intent/tweet?A3000%2F&ref_src=twsrc%e%7Ctwgr%5E&text=Hey%20%40coinbase%20can%20you%20please%20respond%20to%20the%2022%25%20cap%3F&url=http%3A%2F%2Flocalhost%3A3000%2F%23"
-const params = new URLSearchParams({
-  hashtags: "22cap",
-  original_referer: "http://localhost:3000/",
-  ref_src: "twsrc^tfw|twcamp^buttonembed|twterm^share|twgr^",
-  text: "Hey @coinbase can you please respond to the 22% cap?",
-  url: "https://evmavericks.github.io/website-draft-RisingPaw/",
-});
-
 const colorClasses = {
   danger: "bg-red-600",
   warning: "bg-yellow-600",
@@ -120,11 +111,6 @@ export const TableItem: FunctionComponent<TableItemProps> = ({ entity }) => {
           &nbsp;@{meta?.twitter}
         </a>
       </td>
-      {/* <td className="py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                  <a href="#" className="text-indigo-600 hover:text-indigo-900">
-                    Edit<span className="sr-only">, {item.name}</span>
-                  </a>
-                </td> */}
     </tr>
   );
 };
