@@ -1,11 +1,20 @@
 import React, { FunctionComponent, HTMLProps } from "react";
-import body from "src/data/entities.json";
-import meta from "src/data/static.json";
+import { IS_PROD } from "src/config/env";
+import staticEntities from "src/data/entities.json";
+import staticMeta from "src/data/meta.json";
 import { TableItem } from "./TableItem";
 
-// const response = await fetch('https://api.rated.network/v0/eth/entities?window=1d&size=30');
-// const response = await fetch('https://api.rated.network/v0/eth/operators?window=1d&from=15&size=15&idType=depositAddress');
-// const body = await response.json();
+type OperatorEntityResponse = typeof staticEntities;
+
+const fetchEntities = async (): Promise<OperatorEntityResponse> => {
+  const response = await fetch(
+    "https://api.rated.network/v0/eth/operators?window=1d&size=15&idType=entity"
+  );
+  const body = (await response.json()) as OperatorEntityResponse;
+  return body;
+};
+
+const body = IS_PROD ? await fetchEntities() : staticEntities;
 
 export const Table: FunctionComponent = () => {
   return (

@@ -1,6 +1,6 @@
 import React, { FunctionComponent, HTMLProps } from "react";
 import type entities from "src/data/entities.json";
-import meta from "src/data/static.json";
+import meta from "src/data/meta.json";
 import TwitterIcon from "~icons/mdi/twitter";
 import { getTweetLink } from "src/utils";
 import { BASE } from "src/config/env";
