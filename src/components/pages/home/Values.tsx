@@ -28,9 +28,9 @@ export const Values: FunctionComponent = () => {
           />
         </div>
         <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">
+          <h2 className="text-3xl font-extrabold tracking-tight text-white md:text-4xl lg:text-5xl">
             Our Values
-          </h1>
+          </h2>
           <p className="mt-6 max-w-3xl text-xl text-gray-300">
             ManeNet DAO envisions a world with a long-term, self-sufficient, and
             regenerative cryptoeconomic landscape.

@@ -11,6 +11,7 @@
   "devDependencies": {
     "@astrojs/react": "^0.1.2",
     "@astrojs/tailwind": "^0.2.1",
+    "@heroicons/react": "^1.0.6",
     "@iconify-json/mdi": "^1.1.17",
     "@svgr/core": "^6.2.1",
     "astro": "^1.0.0-beta.31",

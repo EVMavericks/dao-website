@@ -10,12 +10,14 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="EVMavericks • WatchTower">
-  <Navbar />
-  <main>
-    <Hero />
-    <TableSection />
-    <TestimonialSection />
-    <FaqSection />
-    <Footer />
-  </main>
+  <div class="bg-white">
+    <Navbar client:load />
+    <main>
+      <Hero />
+      <TableSection />
+      <TestimonialSection />
+      <FaqSection />
+      <Footer />
+    </main>
+  </div>
 </Layout>
