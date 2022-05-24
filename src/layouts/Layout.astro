@@ -11,8 +11,8 @@ const { title } = Astro.props as Props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <base href="/website-draft-RisingPaw" />
-    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <base href={`${import.meta.env.SITE}/website-draft-RisingPaw`} />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>{title}</title>
   </head>
   <body>

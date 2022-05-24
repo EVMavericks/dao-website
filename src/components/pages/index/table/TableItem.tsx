@@ -48,7 +48,7 @@ export const TableItem: FunctionComponent<TableItemProps> = ({ entity }) => {
           <div className="h-10 w-10 flex-shrink-0">
             <img
               className="h-10 w-10 rounded-full"
-              src="./entities/lido.svg"
+              src="entities/lido.svg"
               alt=""
             />
           </div>
