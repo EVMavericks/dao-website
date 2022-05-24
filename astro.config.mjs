@@ -10,9 +10,10 @@ const __dirname = path.dirname(__filename);
 
 // https://astro.build/config
 export default defineConfig({
-  base: "/website-draft-RisingPaw",
+  // base: "/website-draft-RisingPaw",
   integrations: [react(), tailwind()],
-  site: "https://evmavericks.github.io",
+  // site: "https://evmavericks.github.io",
+  site: "https://dao.evmavericks.xyz",
   vite: {
     resolve: {
       alias: [

@@ -1,5 +1,9 @@
 # TODO
 
+## General
+
+- [ ] Pick a twitter hashtag for the 22%-cap
+
 ## Navbar
 
 - [ ] Decide whether we like the current logo / EVMavericks
