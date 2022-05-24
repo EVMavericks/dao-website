@@ -1,0 +1,145 @@
+{
+  "data": [
+    {
+      "id": "Lido",
+      "website": "https://lido.fi",
+      "twitter": "lidofinance",
+      "commitment": {
+        "status": "acknowledged",
+        "comment": "will be starting a governance discussion on their forum to consider the suggestion",
+        "tweet": "LidoFinance/status/1525950357825781760",
+        "date": "11:24 PM · May 15, 2022"
+      }
+    },
+    {
+      "id": "Coinbase",
+      "website": "https://coinbase.com",
+      "twitter": "coinbase",
+      "commitment": {
+        "status": "unknown",
+        "comment": ""
+      }
+    },
+    {
+      "id": "Kraken",
+      "website": "https://kraken.com/en-us",
+      "twitter": "krakenfx",
+      "commitment": {
+        "status": "unknown",
+        "comment": ""
+      }
+    },
+    {
+      "id": "Binance",
+      "website": "https://binance.us/en/home",
+      "twitter": "binance",
+      "commitment": {
+        "status": "unknown",
+        "comment": ""
+      }
+    },
+    {
+      "id": "Bitcoin Suisse",
+      "website": "https://bitcoinsuisse.com",
+      "twitter": "bitcoinsuisseag",
+      "commitment": {
+        "status": "unknown",
+        "comment": ""
+      }
+    },
+    {
+      "id": "Rocketpool",
+      "website": "https://rocketpool.net",
+      "twitter": "Rocket_Pool",
+      "commitment": {
+        "status": "acknowledged",
+        "comment": "dao",
+        "tweet": "langerstwit/status/1525343785219018752",
+        "date": "7:14 AM · May 14, 2022"
+      }
+    },
+    {
+      "id": "Staked.us",
+      "website": "https://staked.us",
+      "twitter": "staked_us",
+      "commitment": {
+        "status": "unknown",
+        "comment": ""
+      }
+    },
+    {
+      "id": "f2pool.eth",
+      "website": "https://f2pool.io/mining/insights",
+      "twitter": "F2Pool_Official",
+      "commitment": {
+        "status": "unknown",
+        "comment": ""
+      }
+    },
+    {
+      "id": "Bitfinex",
+      "website": "https://bitfinex.com",
+      "twitter": "bitfinex",
+      "commitment": {
+        "status": "unknown",
+        "comment": ""
+      }
+    },
+    {
+      "id": "Huobi",
+      "website": "https://huobi.com/en-us",
+      "twitter": "HuobiGlobal",
+      "commitment": {
+        "status": "unknown",
+        "comment": ""
+      }
+    },
+    {
+      "id": "wedex.eth",
+      "website": "https://wedex.app",
+      "twitter": "WedexApp",
+      "commitment": {
+        "status": "unknown",
+        "comment": ""
+      }
+    },
+    {
+      "id": "Bloxstaking",
+      "website": "https://bloxstaking.com",
+      "twitter": "ssv_network",
+      "commitment": {
+        "status": "unknown",
+        "comment": ""
+      }
+    },
+    {
+      "id": "Ankr",
+      "website": "https://stakefi.ankr.com/liquid-staking",
+      "twitter": "ankr",
+      "commitment": {
+        "status": "unknown",
+        "comment": ""
+      }
+    },
+    {
+      "id": "Stakewise",
+      "website": "https://stakewise.io",
+      "twitter": "stakewise_io",
+      "commitment": {
+        "status": "accepted",
+        "comment": "",
+        "tweet": "stakewise_io/status/1525225299146944513",
+        "date": "11:23 PM · May 13, 2022"
+      }
+    },
+    {
+      "id": "Stakefish",
+      "website": "https://stake.fish/en/ethereum",
+      "twitter": "stakefish",
+      "commitment": {
+        "status": "unknown",
+        "comment": ""
+      }
+    }
+  ]
+}

@@ -1,11 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { Hero } from 'src/components/pages/index';
-import { Footer } from 'src/components/layout';
+import Layout from "../layouts/Layout.astro";
+import { Hero, TableSection } from "src/components/pages/index";
+import { Footer } from "src/components/layout";
 ---
+
 <Layout title="Welcome to Astro.">
-<main>
-  <Hero />
-	<Footer />
-</main>
+  <main>
+    <Hero />
+    <TableSection />
+    <Footer />
+  </main>
 </Layout>

@@ -1,0 +1,409 @@
+{
+  "page": {
+    "from": 0,
+    "size": 15
+  },
+  "total": 29,
+  "next": "/v0/eth/operators?window=1d&from=15&size=15&idType=entity",
+  "data": [
+    {
+      "id": "Lido",
+      "idType": "entity",
+      "timeWindow": "1d",
+      "validatorCount": 120775,
+      "avgCorrectness": 0.9839270034550786,
+      "avgInclusionDelay": 1.0373689431734288,
+      "avgUptime": 0.9977476015073161,
+      "avgValidatorEffectiveness": 96.17913530652393,
+      "clientPercentages": [
+        {
+          "client": "Nimbus",
+          "percentage": 0.08723331875394859
+        },
+        {
+          "client": "Prysm",
+          "percentage": 0.3591064457079911
+        },
+        {
+          "client": "Teku",
+          "percentage": 0.1523545706371191
+        },
+        {
+          "client": "Lighthouse",
+          "percentage": 0.40130566490094116
+        }
+      ],
+      "networkPenetration": 0.31438031030178964
+    },
+    {
+      "id": "Coinbase",
+      "idType": "entity",
+      "timeWindow": "1d",
+      "validatorCount": 55004,
+      "avgCorrectness": 0.9858085636954355,
+      "avgInclusionDelay": 1.016852402081529,
+      "avgUptime": 0.9997833059747305,
+      "avgValidatorEffectiveness": 97.67383864025194,
+      "clientPercentages": [
+        {
+          "client": "Prysm",
+          "percentage": 0.5763798987878075
+        },
+        {
+          "client": "Nimbus",
+          "percentage": 0.12089561021537013
+        },
+        {
+          "client": "Lighthouse",
+          "percentage": 0.1399023184653407
+        },
+        {
+          "client": "Teku",
+          "percentage": 0.1628221725314817
+        }
+      ],
+      "networkPenetration": 0.14362032680387068
+    },
+    {
+      "id": "Kraken",
+      "idType": "entity",
+      "timeWindow": "1d",
+      "validatorCount": 33360,
+      "avgCorrectness": 0.9819545029507817,
+      "avgInclusionDelay": 1.0218332300148987,
+      "avgUptime": 0.9979777926403983,
+      "avgValidatorEffectiveness": 96.97184762417253,
+      "clientPercentages": [
+        {
+          "client": "Teku",
+          "percentage": 0.07170467723231543
+        },
+        {
+          "client": "Prysm",
+          "percentage": 0.750966370313104
+        },
+        {
+          "client": "Lighthouse",
+          "percentage": 0.11321028218013143
+        },
+        {
+          "client": "Nimbus",
+          "percentage": 0.06411867027444917
+        }
+      ],
+      "networkPenetration": 0.08710331033834488
+    },
+    {
+      "id": "Binance",
+      "idType": "entity",
+      "timeWindow": "1d",
+      "validatorCount": 19738,
+      "avgCorrectness": 0.985920893892388,
+      "avgInclusionDelay": 1.017497619392194,
+      "avgUptime": 0.9983174612913401,
+      "avgValidatorEffectiveness": 97.4882900589462,
+      "clientPercentages": [
+        {
+          "client": "Nimbus",
+          "percentage": 0.08063202475973286
+        },
+        {
+          "client": "Prysm",
+          "percentage": 0.6066949014497475
+        },
+        {
+          "client": "Teku",
+          "percentage": 0.01628929793125916
+        },
+        {
+          "client": "Lighthouse",
+          "percentage": 0.29638377585926046
+        }
+      ],
+      "networkPenetration": 0.0515376701777107
+    },
+    {
+      "id": "Bitcoin Suisse",
+      "idType": "entity",
+      "timeWindow": "1d",
+      "validatorCount": 8102,
+      "avgCorrectness": 0.9821222459338191,
+      "avgInclusionDelay": 1.0588034024722024,
+      "avgUptime": 0.9977686308939209,
+      "avgValidatorEffectiveness": 94.10161814706704,
+      "clientPercentages": [
+        {
+          "client": "Nimbus",
+          "percentage": 0.12438881283004107
+        },
+        {
+          "client": "Teku",
+          "percentage": 0.8746332876980246
+        },
+        {
+          "client": "Prysm",
+          "percentage": 0.0009778994719342852
+        }
+      ],
+      "networkPenetration": 0.021155041229091707
+    },
+    {
+      "id": "Rocketpool",
+      "idType": "entity",
+      "timeWindow": "1d",
+      "validatorCount": 5346,
+      "avgCorrectness": 0.9847179760421572,
+      "avgInclusionDelay": 1.0211241982323374,
+      "avgUptime": 0.9948563064861629,
+      "avgValidatorEffectiveness": 96.90228090885114,
+      "clientPercentages": [
+        {
+          "client": "Lighthouse",
+          "percentage": 0.4493120354262217
+        },
+        {
+          "client": "Teku",
+          "percentage": 0.2293215245927566
+        },
+        {
+          "client": "Prysm",
+          "percentage": 0.05962359639411672
+        },
+        {
+          "client": "Nimbus",
+          "percentage": 0.26174284358690497
+        }
+      ],
+      "networkPenetration": 0.013958880574021755
+    },
+    {
+      "id": "Staked.us",
+      "idType": "entity",
+      "timeWindow": "1d",
+      "validatorCount": 5263,
+      "avgCorrectness": 0.9850762546464961,
+      "avgInclusionDelay": 1.0239109102889528,
+      "avgUptime": 0.998943401737321,
+      "avgValidatorEffectiveness": 97.0702578238129,
+      "clientPercentages": [
+        {
+          "client": "Nimbus",
+          "percentage": 0.06578947368421052
+        },
+        {
+          "client": "Lighthouse",
+          "percentage": 0.00687799043062201
+        },
+        {
+          "client": "Prysm",
+          "percentage": 0.430622009569378
+        },
+        {
+          "client": "Teku",
+          "percentage": 0.4967105263157895
+        }
+      ],
+      "networkPenetration": 0.013742160205962682
+    },
+    {
+      "id": "f2pool.eth",
+      "idType": "entity",
+      "timeWindow": "1d",
+      "validatorCount": 3501,
+      "avgCorrectness": 0.9816607945988411,
+      "avgInclusionDelay": 1.0645873142751283,
+      "avgUptime": 0.9965048692946611,
+      "avgValidatorEffectiveness": 93.1694939770357,
+      "clientPercentages": [
+        {
+          "client": "Lighthouse",
+          "percentage": 1
+        }
+      ],
+      "networkPenetration": 0.009141421790058018
+    },
+    {
+      "id": "Bitfinex",
+      "idType": "entity",
+      "timeWindow": "1d",
+      "validatorCount": 3214,
+      "avgCorrectness": 0.983635362010289,
+      "avgInclusionDelay": 1.0196923753799634,
+      "avgUptime": 0.9993441854475853,
+      "avgValidatorEffectiveness": 97.27224506718989,
+      "clientPercentages": [
+        {
+          "client": "Teku",
+          "percentage": 0.03796844181459566
+        },
+        {
+          "client": "Lighthouse",
+          "percentage": 0.0019723865877712033
+        },
+        {
+          "client": "Prysm",
+          "percentage": 0.841715976331361
+        },
+        {
+          "client": "Nimbus",
+          "percentage": 0.11834319526627218
+        }
+      ],
+      "networkPenetration": 0.008392039312552549
+    },
+    {
+      "id": "Huobi",
+      "idType": "entity",
+      "timeWindow": "1d",
+      "validatorCount": 2855,
+      "avgCorrectness": 0.9849642951183921,
+      "avgInclusionDelay": 1.0177837271343462,
+      "avgUptime": 0.9995936595667956,
+      "avgValidatorEffectiveness": 97.5438418678235,
+      "clientPercentages": [
+        {
+          "client": "Lighthouse",
+          "percentage": 0.0005473453749315818
+        },
+        {
+          "client": "Nimbus",
+          "percentage": 0.11056376573617953
+        },
+        {
+          "client": "Teku",
+          "percentage": 0.02681992337164751
+        },
+        {
+          "client": "Prysm",
+          "percentage": 0.8620689655172413
+        }
+      ],
+      "networkPenetration": 0.007454658443477762
+    },
+    {
+      "id": "wedex.eth",
+      "idType": "entity",
+      "timeWindow": "1d",
+      "validatorCount": 2399,
+      "avgCorrectness": 0.9840523053888848,
+      "avgInclusionDelay": 1.0299619944835137,
+      "avgUptime": 0.997997373183441,
+      "avgValidatorEffectiveness": 96.0787719947059,
+      "clientPercentages": [
+        {
+          "client": "Lighthouse",
+          "percentage": 1
+        }
+      ],
+      "networkPenetration": 0.0062640019635387565
+    },
+    {
+      "id": "Bloxstaking",
+      "idType": "entity",
+      "timeWindow": "1d",
+      "validatorCount": 2392,
+      "avgCorrectness": 0.9834065419210755,
+      "avgInclusionDelay": 1.0189266285404213,
+      "avgUptime": 0.996494149714133,
+      "avgValidatorEffectiveness": 97.12561500693238,
+      "clientPercentages": [
+        {
+          "client": "Nimbus",
+          "percentage": 0.0673202614379085
+        },
+        {
+          "client": "Teku",
+          "percentage": 0.03986928104575163
+        },
+        {
+          "client": "Prysm",
+          "percentage": 0.5320261437908497
+        },
+        {
+          "client": "Lighthouse",
+          "percentage": 0.3607843137254902
+        }
+      ],
+      "networkPenetration": 0.006245724342136184
+    },
+    {
+      "id": "Ankr",
+      "idType": "entity",
+      "timeWindow": "1d",
+      "validatorCount": 2264,
+      "avgCorrectness": 0.8657236925710663,
+      "avgInclusionDelay": 1.3766934898416172,
+      "avgUptime": 0.8992816446728373,
+      "avgValidatorEffectiveness": 68.72893944543155,
+      "clientPercentages": [
+        {
+          "client": "Prysm",
+          "percentage": 0.8766666666666667
+        },
+        {
+          "client": "Teku",
+          "percentage": 0.01
+        },
+        {
+          "client": "Nimbus",
+          "percentage": 0.10916666666666666
+        },
+        {
+          "client": "Lighthouse",
+          "percentage": 0.004166666666666667
+        }
+      ],
+      "networkPenetration": 0.005908893890574492
+    },
+    {
+      "id": "Stakewise",
+      "idType": "entity",
+      "timeWindow": "1d",
+      "validatorCount": 2233,
+      "avgCorrectness": 0.9836611453393976,
+      "avgInclusionDelay": 1.0254333193552896,
+      "avgUptime": 0.9974718669498795,
+      "avgValidatorEffectiveness": 96.63839915875546,
+      "clientPercentages": [
+        {
+          "client": "Teku",
+          "percentage": 0.03550784475639967
+        },
+        {
+          "client": "Prysm",
+          "percentage": 0.4310487200660611
+        },
+        {
+          "client": "Nimbus",
+          "percentage": 0.053674649050371594
+        },
+        {
+          "client": "Lighthouse",
+          "percentage": 0.4797687861271676
+        }
+      ],
+      "networkPenetration": 0.00583056122742061
+    },
+    {
+      "id": "Stakefish",
+      "idType": "entity",
+      "timeWindow": "1d",
+      "validatorCount": 1518,
+      "avgCorrectness": 0.9813632882307889,
+      "avgInclusionDelay": 1.0696860652183604,
+      "avgUptime": 0.9690530890610669,
+      "avgValidatorEffectiveness": 90.91632444610133,
+      "clientPercentages": [
+        {
+          "client": "Teku",
+          "percentage": 0.045317220543806644
+        },
+        {
+          "client": "Lighthouse",
+          "percentage": 0.9546827794561934
+        }
+      ],
+      "networkPenetration": 0.003963632755586424
+    }
+  ]
+}
