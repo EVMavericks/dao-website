@@ -20,26 +20,24 @@ export const Navbar: FunctionComponent<NavbarProps> = ({ className = "" }) => {
       <Popover>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <nav
-            className="relative flex items-center justify-between sm:h-10 md:justify-center"
+            className="relative flex items-center justify-between sm:h-12 md:justify-center"
             aria-label="Global"
           >
             <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
               <div className="flex items-center justify-between w-full md:w-auto">
-                <a href="#">
+                <a
+                  href={`${BASE}/`}
+                  className="pr-1 flex flex-row items-center"
+                >
                   <span className="sr-only">EVMavericks</span>
                   <img
-                    className="h-8 w-auto sm:h-12"
+                    className="h-8 w-auto sm:h-12 pr-2"
                     src={`${BASE}/assets/evmavericks.svg`}
                     alt=""
                   />
-                </a>
-                <a href="#">
-                  <span className="sr-only">Ethereum</span>
-                  <img
-                    className="h-8 w-auto sm:h-10"
-                    src={`${BASE}/assets/ethereum.svg`}
-                    alt=""
-                  />
+                  <span className="text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-3xl">
+                    EVMavericks
+                  </span>
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">
                   <Popover.Button className="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
