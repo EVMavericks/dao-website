@@ -49,7 +49,9 @@ export const TableItem: FunctionComponent<TableItemProps> = ({ entity }) => {
           <div className="h-10 w-10 flex-shrink-0">
             <img
               className="h-10 w-10 rounded-full"
-              src={`${BASE}/entities/${meta?.icon ? entity.id : "unknown"}.svg`}
+              src={`${BASE}/entities/${
+                meta?.icon ? meta?.icon : "unknown.svg"
+              }`}
               alt=""
             />
           </div>
