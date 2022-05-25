@@ -4,6 +4,7 @@
       "id": "Lido",
       "website": "https://lido.fi",
       "twitter": "lidofinance",
+      "icon": true,
       "commitment": {
         "status": "acknowledged",
         "comment": "will be starting a governance discussion on their forum to consider the suggestion",
@@ -15,6 +16,7 @@
       "id": "Coinbase",
       "website": "https://coinbase.com",
       "twitter": "coinbase",
+      "icon": true,
       "commitment": {
         "status": "unknown",
         "comment": ""
@@ -24,6 +26,7 @@
       "id": "Kraken",
       "website": "https://kraken.com/en-us",
       "twitter": "krakenfx",
+      "icon": true,
       "commitment": {
         "status": "unknown",
         "comment": ""
@@ -33,6 +36,7 @@
       "id": "Binance",
       "website": "https://binance.us/en/home",
       "twitter": "binance",
+      "icon": true,
       "commitment": {
         "status": "unknown",
         "comment": ""

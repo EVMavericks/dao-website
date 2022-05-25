@@ -49,7 +49,7 @@ export const TableItem: FunctionComponent<TableItemProps> = ({ entity }) => {
           <div className="h-10 w-10 flex-shrink-0">
             <img
               className="h-10 w-10 rounded-full"
-              src={`${BASE}/entities/lido.svg`}
+              src={`${BASE}/entities/${meta?.icon ? entity.id : "unknown"}.svg`}
               alt=""
             />
           </div>
@@ -65,7 +65,7 @@ export const TableItem: FunctionComponent<TableItemProps> = ({ entity }) => {
           </div>
         </div>
       </td>
-      <td className="hidden px-3 py-4 text-sm text-gray-500 sm:table-cell">
+      <td className="px-3 py-4 text-sm text-gray-500 hidden sm:table-cell">
         <div className="py-2">
           <span
             className={`inline-flex rounded-full px-2 text-xs font-semibold leading-5 ${
@@ -99,7 +99,7 @@ export const TableItem: FunctionComponent<TableItemProps> = ({ entity }) => {
           ></div>
         </div>
       </td>
-      <td className="px-3 py-4 text-xs text-gray-500">
+      <td className="px-3 py-4 text-xs text-gray-500 hidden sm:table-cell">
         {/* <Icon name="mdi:account" /> */}
         <a
           href={getTweetLink({

@@ -44,7 +44,7 @@ export const Table: FunctionComponent = () => {
                 </th>
                 <th
                   scope="col"
-                  className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                  className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900  hidden sm:table-cell"
                 >
                   Contact
                 </th>
