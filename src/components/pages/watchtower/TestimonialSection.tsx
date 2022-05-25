@@ -16,9 +16,23 @@ export const TestimonialSection: FunctionComponent = () => {
         </div>
         <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
           <p className="text-lg text-gray-500">
-            @TODO The Ethereum protocol that launched in 2015 has had incredible
-            success. But the Ethereum community always expected that a few key
-            upgrades would be necessary to unlock Ethereum's full potential.
+            @TODO Inspired by{" "}
+            <a href="https://twitter.com/superphiz/status/1525218193756807169">
+              tweets
+            </a>{" "}
+            and{" "}
+            <a href="https://www.reddit.com/r/ethfinance/comments/unt9m0/comment/i8d1bw9/?utm_source=share&utm_medium=web2x&context=3">
+              Reddit posts
+            </a>{" "}
+            by{" "}
+            <a
+              href="https://twitter.com/superphiz"
+              className="text-indigo-400 hover:text-indigo-500"
+              target="_blank"
+            >
+              @superphiz
+            </a>
+            .{" "}
           </p>
         </div>
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">

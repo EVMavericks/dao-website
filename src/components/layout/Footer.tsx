@@ -90,23 +90,7 @@ export const Footer: FunctionComponent<FooterProps> = ({ ...otherProps }) => {
           &copy;2022 a ManeNet DAO initiative
         </p>
         <p className="mt-2 text-center text-2xs text-gray-400">
-          Inspired by{" "}
-          <a href="https://twitter.com/superphiz/status/1525218193756807169">
-            tweets
-          </a>{" "}
-          and{" "}
-          <a href="https://www.reddit.com/r/ethfinance/comments/unt9m0/comment/i8d1bw9/?utm_source=share&utm_medium=web2x&context=3">
-            Reddit posts
-          </a>{" "}
-          by{" "}
-          <a
-            href="https://twitter.com/superphiz"
-            className="text-indigo-400 hover:text-indigo-500"
-            target="_blank"
-          >
-            @superphiz
-          </a>
-          . Built with <HeartIcon className="inline" /> by{" "}
+          Built with <HeartIcon className="inline" /> by{" "}
           <a
             href="https://twitter.com/RisingPaw"
             className="text-indigo-400 hover:text-indigo-500"

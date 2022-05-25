@@ -1,67 +1,89 @@
 import React, { FunctionComponent, HTMLProps } from "react";
 import EarthIcon from "~icons/mdi/earth";
+import DiscordIcon from "~icons/mdi/discord";
+import VoteIcon from "~icons/mdi/vote";
+import ParachuteIcon from "~icons/mdi/parachute";
+import PickaxeIcon from "~icons/mdi/pickaxe";
+import ShcoolIcon from "~icons/mdi/school";
+import GoldIcon from "~icons/mdi/gold";
+import HammerIcon from "~icons/mdi/hammer-screwdriver";
+import AccountGroupIcon from "~icons/mdi/account-group";
 
 const features = [
   {
-    name: "Unlimited Inboxes",
+    name: "Snapshot Votes",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: EarthIcon,
+      "Directly weight in on the organization's future by participating in regular snapshot votes.",
+    icon: VoteIcon,
   },
   {
-    name: "Manage Team Members",
+    name: "Join a Family",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: EarthIcon,
+      "EVMavericks are bound together with the will to see Ethereum succeed, we share strong values and ideals.",
+    icon: AccountGroupIcon,
   },
   {
-    name: "Spam Report",
+    name: "Discover the ecosystem",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: EarthIcon,
+      "Thanks to our diverse and talented community, there is countless opportunities to learn and discover.",
+    icon: ShcoolIcon,
   },
   {
-    name: "Compose in Markdown",
+    name: "Build the Future",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: EarthIcon,
+      "Contribute with us to Ethereum's next chapter, pushing for decentralization as a public good for all.",
+    icon: HammerIcon,
   },
   {
-    name: "Team Reporting",
+    name: "Private Discord Access",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: EarthIcon,
+      "Have access to all private channels on Discord, including our best #alpha related ones.",
+    icon: DiscordIcon,
   },
   {
-    name: "Saved Replies",
+    name: "Exclusive NFT mints",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: EarthIcon,
+      "Gain access to pre-mints for partner projects that have ethos aligned with ours.",
+    icon: PickaxeIcon,
   },
   {
-    name: "Email Commenting",
+    name: "Partners Airdrops",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: EarthIcon,
+      "Building our ever growing network, you can except some interesting Airdrops in the future.",
+    icon: ParachuteIcon,
   },
   {
-    name: "Connect with Customers",
+    name: "Potential Revenue Stream",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: EarthIcon,
+      "We want to build and maitain a thriving community, you might get directly incentivised to hold an EVM.",
+    icon: GoldIcon,
   },
 ];
 
 export const Features: FunctionComponent = () => {
   return (
-    <div className="bg-indigo-700">
+    <section id="features" className="bg-indigo-700">
       <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
         <h2 className="text-3xl font-extrabold text-white tracking-tight">
-          Joining the EVMavericks
+          Joining the EVMavericks ManeNet DAO
         </h2>
         <p className="mt-4 max-w-3xl text-lg text-indigo-200">
-          Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et
-          magna sit morbi lobortis. Blandit aliquam sit nisl euismod mattis in.
+          To join our DAO you must own a EVMavericks NFT. You can buy one on{" "}
+          <a
+            href="https://looksrare.org/collections/0x7dDAA898D33D7aB252Ea5F89f96717c47B2fEE6e"
+            className="hover:text-indigo-300"
+          >
+            LooksRare
+          </a>{" "}
+          or{" "}
+          <a
+            href="https://opensea.io/collection/evmavericks"
+            className="hover:text-indigo-300"
+          >
+            OpenSea
+          </a>
+          . Being a member of the EVMavericks family gives you some nice and
+          exclusive features:
         </p>
         <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
           {features.map((feature) => (
@@ -86,6 +108,6 @@ export const Features: FunctionComponent = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
