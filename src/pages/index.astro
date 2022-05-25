@@ -1,7 +1,7 @@
 ---
+import { DualSquarePattern } from "src/components/design";
 import { Footer, Navbar } from "src/components/layout";
 import { Features, Hero, Values } from "src/components/pages/home";
-import Page from "src/components/pages/home/Page";
 import Layout from "src/layouts/Layout.astro";
 ---
 
@@ -9,8 +9,11 @@ import Layout from "src/layouts/Layout.astro";
   <div class="bg-white">
     <Navbar client:load />
     <main>
-      <Hero />
-      <Values />
+      <div class="overflow-hidden">
+        <DualSquarePattern />
+        <Hero />
+        <Values />
+      </div>
       <Features />
       <Footer />
     </main>

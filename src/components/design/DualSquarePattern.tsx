@@ -2,7 +2,10 @@ import { FunctionComponent } from "react";
 
 export const DualSquarePattern: FunctionComponent = () => {
   return (
-    <div className="absolute inset-y-0 h-full w-full" aria-hidden="true">
+    <div
+      className="absolute inset-y-0 h-full w-full overflow-hidden"
+      aria-hidden="true"
+    >
       <div className="relative h-full">
         <svg
           className="absolute right-full transform translate-y-1/3 translate-x-1/4 md:translate-y-1/2 sm:translate-x-1/2 lg:translate-x-full"
