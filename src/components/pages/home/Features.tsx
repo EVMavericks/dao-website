@@ -1,13 +1,12 @@
-import React, { FunctionComponent, HTMLProps } from "react";
-import EarthIcon from "~icons/mdi/earth";
+import { FunctionComponent } from "react";
+import AccountGroupIcon from "~icons/mdi/account-group";
 import DiscordIcon from "~icons/mdi/discord";
-import VoteIcon from "~icons/mdi/vote";
+import GoldIcon from "~icons/mdi/gold";
+import HammerIcon from "~icons/mdi/hammer-screwdriver";
 import ParachuteIcon from "~icons/mdi/parachute";
 import PickaxeIcon from "~icons/mdi/pickaxe";
 import ShcoolIcon from "~icons/mdi/school";
-import GoldIcon from "~icons/mdi/gold";
-import HammerIcon from "~icons/mdi/hammer-screwdriver";
-import AccountGroupIcon from "~icons/mdi/account-group";
+import VoteIcon from "~icons/mdi/vote";
 
 const features = [
   {
@@ -41,16 +40,16 @@ const features = [
     icon: DiscordIcon,
   },
   {
+    name: "Partners Airdrops",
+    description:
+      "Building our ever growing network, you can expect some interesting Airdrops in the future.",
+    icon: ParachuteIcon,
+  },
+  {
     name: "Exclusive NFT mints",
     description:
       "Gain access to pre-mints for partner projects that have ethos aligned with ours.",
     icon: PickaxeIcon,
-  },
-  {
-    name: "Partners Airdrops",
-    description:
-      "Building our ever growing network, you can except some interesting Airdrops in the future.",
-    icon: ParachuteIcon,
   },
   {
     name: "Potential Revenue Stream",
@@ -68,7 +67,7 @@ export const Features: FunctionComponent = () => {
           Joining the EVMavericks ManeNet DAO
         </h2>
         <p className="mt-4 max-w-3xl text-lg text-indigo-200">
-          To join our DAO you must own a EVMavericks NFT. You can buy one on{" "}
+          To join our DAO you must own an EVMavericks NFT. You can buy one on{" "}
           <a
             href="https://looksrare.org/collections/0x7dDAA898D33D7aB252Ea5F89f96717c47B2fEE6e"
             className="hover:text-indigo-300"
