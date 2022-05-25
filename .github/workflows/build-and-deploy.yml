@@ -1,6 +1,9 @@
 name: build-and-deploy
 
-on: [push]
+on:
+  push:
+  schedule:
+    - cron: "0 12 * * * " # every day at noon
 
 permissions:
   contents: write
@@ -13,8 +16,8 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
         with:
-          node-version: '16.x'
-          cache: 'npm'
+          node-version: "16.x"
+          cache: "npm"
 
       - name: Install and Build 🔧
         run: |
