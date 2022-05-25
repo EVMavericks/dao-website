@@ -84,6 +84,7 @@
       "id": "Bitfinex",
       "website": "https://bitfinex.com",
       "twitter": "bitfinex",
+      "icon": true,
       "commitment": {
         "status": "unknown",
         "comment": ""
@@ -93,6 +94,7 @@
       "id": "Huobi",
       "website": "https://huobi.com/en-us",
       "twitter": "HuobiGlobal",
+      "icon": true,
       "commitment": {
         "status": "unknown",
         "comment": ""
