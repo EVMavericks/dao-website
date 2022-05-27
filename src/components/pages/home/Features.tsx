@@ -54,7 +54,7 @@ const features = [
   {
     name: "Potential Revenue Stream",
     description:
-      "We want to build and maitain a thriving community, you might get directly incentivised to hold an EVM.",
+      "We want to build and maintain a thriving community, you might get directly incentivised to hold an EVM.",
     icon: GoldIcon,
   },
 ];
