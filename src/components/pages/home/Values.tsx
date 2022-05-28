@@ -28,18 +28,39 @@ export const Values: FunctionComponent = () => {
           />
         </div>
         <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold tracking-tight text-white md:text-4xl lg:text-5xl">
-            Our Values
-          </h2>
-          <p className="mt-6 max-w-3xl text-xl text-gray-300">
-            ManeNet DAO envisions a world with a long-term, self-sufficient, and
-            regenerative cryptoeconomic landscape.
-          </p>
-          <p className="mt-6 max-w-3xl text-xl text-gray-300">
-            We see an ecosystem with a greater symbiotic effect between its
-            protocols and users; one that enables sustainable and reliable
-            public goods funding for projects that need it most.
-          </p>
+          <div className="text-center">
+            <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+              <span className="block text-white">
+                {/* <a
+                href="https://ethereum.org/en/"
+                target="_blank"
+                className="inline-flex"
+              >
+                <span className="sr-only">Ethereum</span>
+                <img
+                  className="h-8 w-auto sm:h-12 px-2"
+                  src={`${BASE}/assets/ethereum.svg`}
+                  style={{ fillColor: "red" }}
+                  alt=""
+                />
+              </a> */}
+                EVMavericks
+              </span>
+              <span className="block text-orange-400">ManeNet DAO</span>
+            </h1>
+            <div className="max-w-md mx-auto sm:text-lg md:mt-5 md:text-xl md:max-w-3xl text-gray-300">
+              <p className="mt-6">
+                ManeNet DAO advances the decentralized Ethereum Web3 ecosystem
+                by aligning shared member incentives with funding, developing,
+                and promoting public goods and education.
+              </p>
+              {/* <p className="mt-6">
+                Let's build an ecosystem with a greater symbiotic effect between
+                its protocols and users; one that enables sustainable and
+                reliable public goods funding for projects that need it most.
+              </p> */}
+            </div>
+          </div>
         </div>
       </div>
 
@@ -82,6 +103,11 @@ export const Values: FunctionComponent = () => {
             </div>
           ))}
         </div>
+
+        <p className="text-center mt-3 max-w-md mx-auto text-base text-gray-500 md:mt-5 md:text-sm md:max-w-3xl">
+          ManeNet DAO envisions a world with a long-term, self-sufficient, and
+          regenerative cryptoeconomic landscape.
+        </p>
       </section>
     </div>
   );
