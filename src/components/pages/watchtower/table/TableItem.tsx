@@ -41,7 +41,10 @@ export const TableItem: FunctionComponent<TableItemProps> = ({ entity }) => {
   const color =
     colorClasses[getProfileForNetworkPenetration(entity.networkPenetration)];
   const meta = entityMetaById[entity.id];
-  const url = new URL(meta?.website);
+  if (!meta) {
+    throw new Error(`Missing meta for ${entity.id}`);
+  }
+  const url = new URL(meta.website);
   return (
     <tr key={entity.id}>
       <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-6">
@@ -49,16 +52,14 @@ export const TableItem: FunctionComponent<TableItemProps> = ({ entity }) => {
           <div className="h-10 w-10 flex-shrink-0">
             <img
               className="h-10 w-10 rounded-full"
-              src={`${BASE}/entities/${
-                meta?.icon ? meta?.icon : "unknown.svg"
-              }`}
+              src={`${BASE}/entities/${meta.icon ? meta.icon : "unknown.svg"}`}
               alt=""
             />
           </div>
           <div className="ml-4">
             <div className="font-medium text-gray-900">{entity.id}</div>
             <a
-              href={meta?.website}
+              href={meta.website}
               target="_blank"
               className="text-indigo-600 hover:text-indigo-900"
             >
@@ -71,20 +72,20 @@ export const TableItem: FunctionComponent<TableItemProps> = ({ entity }) => {
         <div className="py-2">
           <span
             className={`inline-flex rounded-full px-2 text-xs font-semibold leading-5 ${
-              commitmentColorClasses[meta?.commitment?.status]
+              commitmentColorClasses[meta.commitment?.status]
             }`}
-            title={meta?.commitment?.comment}
+            title={meta.commitment?.comment}
           >
-            {meta?.commitment?.status}
+            {meta.commitment?.status}
           </span>
         </div>
         <a
           className={`block px-2 text-2xs text-gray-500 hover:underline`}
-          title={meta?.commitment?.comment}
-          href={`https://twitter.com/${meta?.commitment?.tweet}`}
+          title={meta.commitment?.comment}
+          href={`https://twitter.com/${meta.commitment?.tweet}`}
           target="_blank"
         >
-          <div className="">{meta?.commitment?.date || "?"}</div>
+          <div className="">{meta.commitment?.date || "?"}</div>
         </a>
       </td>
       <td className="px-3 py-4 text-sm text-gray-500">
@@ -105,13 +106,13 @@ export const TableItem: FunctionComponent<TableItemProps> = ({ entity }) => {
         {/* <Icon name="mdi:account" /> */}
         <a
           href={getTweetLink({
-            text: `Hey @${meta?.twitter} what do you think of the proposed 22% penetration cap for ethereum consensus layer?`,
+            text: `Hey @${meta.twitter} what do you think of the proposed 22% penetration cap for ethereum consensus layer?`,
           })}
           target="_blank"
           className=" hover:bg-[#0d7ac0] bg-[#1d9bf0] text-white p-2 rounded-md"
         >
           <TwitterIcon className="inline fill-white" />
-          &nbsp;@{meta?.twitter}
+          &nbsp;@{meta.twitter}
         </a>
       </td>
     </tr>
