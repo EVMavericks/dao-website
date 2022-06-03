@@ -6,7 +6,7 @@ import GithubIcon from "~icons/mdi/github";
 import MenuIcon from "~icons/mdi/menu";
 
 const navigation = [
-  { name: "ManeNetDAO", href: `${BASE}/` },
+  { name: "ManeNet", href: `${BASE}/` },
   { name: "WatchTower", href: `${BASE}/watchtower` },
 ];
 
