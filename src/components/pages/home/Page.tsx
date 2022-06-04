@@ -203,40 +203,40 @@ export default function Example() {
       <main>
         {/* Hero section */}
         <div className="relative">
-          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
-          <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+          <div className="absolute inset-x-0 bottom-0 bg-gray-100 h-1/2" />
+          <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
               <div className="absolute inset-0">
                 <img
-                  className="h-full w-full object-cover"
+                  className="object-cover w-full h-full"
                   src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
                   alt="People working on laptops"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-800 to-indigo-700 mix-blend-multiply" />
               </div>
               <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-                <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                <h1 className="text-4xl font-extrabold tracking-tight text-center sm:text-5xl lg:text-6xl">
                   <span className="block text-white">Take control of your</span>
                   <span className="block text-indigo-200">
                     customer support
                   </span>
                 </h1>
-                <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
+                <p className="max-w-lg mx-auto mt-6 text-xl text-center text-indigo-200 sm:max-w-3xl">
                   Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
                   qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
                   occaecat fugiat aliqua.
                 </p>
-                <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+                <div className="max-w-sm mx-auto mt-10 sm:max-w-none sm:flex sm:justify-center">
                   <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
                     <a
                       href="#"
-                      className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8"
+                      className="flex items-center justify-center px-4 py-3 text-base font-medium text-indigo-700 bg-white border border-transparent rounded-md shadow-sm hover:bg-indigo-50 sm:px-8"
                     >
                       Get started
                     </a>
                     <a
                       href="#"
-                      className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"
+                      className="flex items-center justify-center px-4 py-3 text-base font-medium text-white bg-indigo-500 border border-transparent rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 sm:px-8"
                     >
                       Live demo
                     </a>
@@ -249,40 +249,40 @@ export default function Example() {
 
         {/* Logo Cloud */}
         <div className="bg-gray-100">
-          <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-            <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
+          <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <p className="text-sm font-semibold tracking-wide text-center text-gray-500 uppercase">
               Trusted by over 5 very average small businesses
             </p>
             <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <div className="flex justify-center col-span-1 md:col-span-2 lg:col-span-1">
                 <img
                   className="h-12"
                   src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
                   alt="Tuple"
                 />
               </div>
-              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <div className="flex justify-center col-span-1 md:col-span-2 lg:col-span-1">
                 <img
                   className="h-12"
                   src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
                   alt="Mirage"
                 />
               </div>
-              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <div className="flex justify-center col-span-1 md:col-span-2 lg:col-span-1">
                 <img
                   className="h-12"
                   src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
                   alt="StaticKit"
                 />
               </div>
-              <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
+              <div className="flex justify-center col-span-1 md:col-span-2 md:col-start-2 lg:col-span-1">
                 <img
                   className="h-12"
                   src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
                   alt="Transistor"
                 />
               </div>
-              <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
+              <div className="flex justify-center col-span-2 md:col-span-2 md:col-start-4 lg:col-span-1">
                 <img
                   className="h-12"
                   src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
@@ -301,12 +301,12 @@ export default function Example() {
           />
           <div className="relative">
             <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-              <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+              <div className="max-w-xl px-4 mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
                 <div>
                   <div>
-                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600">
+                    <span className="flex items-center justify-center w-12 h-12 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600">
                       <InboxIcon
-                        className="h-6 w-6 text-white"
+                        className="w-6 h-6 text-white"
                         aria-hidden="true"
                       />
                     </span>
@@ -325,14 +325,14 @@ export default function Example() {
                     <div className="mt-6">
                       <a
                         href="#"
-                        className="inline-flex bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700"
+                        className="inline-flex px-4 py-2 text-base font-medium text-white border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border rounded-md shadow-sm hover:from-purple-700 hover:to-indigo-700"
                       >
                         Get started
                       </a>
                     </div>
                   </div>
                 </div>
-                <div className="mt-8 border-t border-gray-200 pt-6">
+                <div className="pt-6 mt-8 border-t border-gray-200">
                   <blockquote>
                     <div>
                       <p className="text-base text-gray-500">
@@ -345,7 +345,7 @@ export default function Example() {
                       <div className="flex items-center space-x-3">
                         <div className="flex-shrink-0">
                           <img
-                            className="h-6 w-6 rounded-full"
+                            className="w-6 h-6 rounded-full"
                             src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
                             alt=""
                           />
@@ -361,7 +361,7 @@ export default function Example() {
               <div className="mt-12 sm:mt-16 lg:mt-0">
                 <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                   <img
-                    className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                    className="w-full shadow-xl rounded-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                     src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg"
                     alt="Inbox user interface"
                   />
@@ -371,12 +371,12 @@ export default function Example() {
           </div>
           <div className="mt-24">
             <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-              <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
+              <div className="max-w-xl px-4 mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
                 <div>
                   <div>
-                    <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600">
+                    <span className="flex items-center justify-center w-12 h-12 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600">
                       <SparklesIcon
-                        className="h-6 w-6 text-white"
+                        className="w-6 h-6 text-white"
                         aria-hidden="true"
                       />
                     </span>
@@ -395,7 +395,7 @@ export default function Example() {
                     <div className="mt-6">
                       <a
                         href="#"
-                        className="inline-flex bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700"
+                        className="inline-flex px-4 py-2 text-base font-medium text-white border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border rounded-md shadow-sm hover:from-purple-700 hover:to-indigo-700"
                       >
                         Get started
                       </a>
@@ -406,7 +406,7 @@ export default function Example() {
               <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
                 <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                   <img
-                    className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                    className="w-full shadow-xl rounded-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                     src="https://tailwindui.com/img/component-images/inbox-app-screenshot-2.jpg"
                     alt="Customer profile user interface"
                   />
@@ -418,11 +418,11 @@ export default function Example() {
 
         {/* Gradient Feature Section */}
         <div className="bg-gradient-to-r from-purple-800 to-indigo-700">
-          <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
-            <h2 className="text-3xl font-extrabold text-white tracking-tight">
+          <div className="max-w-4xl px-4 py-16 mx-auto sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
+            <h2 className="text-3xl font-extrabold tracking-tight text-white">
               Inbox support built for efficiency
             </h2>
-            <p className="mt-4 max-w-3xl text-lg text-purple-200">
+            <p className="max-w-3xl mt-4 text-lg text-purple-200">
               Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et
               magna sit morbi lobortis. Blandit aliquam sit nisl euismod mattis
               in.
@@ -431,9 +431,9 @@ export default function Example() {
               {features.map((feature) => (
                 <div key={feature.name}>
                   <div>
-                    <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
+                    <span className="flex items-center justify-center w-12 h-12 bg-white rounded-md bg-opacity-10">
                       <feature.icon
-                        className="h-6 w-6 text-white"
+                        className="w-6 h-6 text-white"
                         aria-hidden="true"
                       />
                     </span>
@@ -454,11 +454,11 @@ export default function Example() {
 
         {/* Stats section */}
         <div className="relative bg-gray-900">
-          <div className="h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full">
-            <div className="h-full w-full xl:grid xl:grid-cols-2">
+          <div className="absolute inset-x-0 bottom-0 h-80 xl:top-0 xl:h-full">
+            <div className="w-full h-full xl:grid xl:grid-cols-2">
               <div className="h-full xl:relative xl:col-start-2">
                 <img
-                  className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
+                  className="object-cover w-full h-full opacity-25 xl:absolute xl:inset-0"
                   src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
                   alt="People working on laptops"
                 />
@@ -469,10 +469,10 @@ export default function Example() {
               </div>
             </div>
           </div>
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
+          <div className="max-w-4xl px-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
             <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
               <h2 className="text-sm font-semibold tracking-wide uppercase">
-                <span className="bg-gradient-to-r from-purple-300 to-indigo-300 bg-clip-text text-transparent">
+                <span className="text-transparent bg-gradient-to-r from-purple-300 to-indigo-300 bg-clip-text">
                   Valuable Metrics
                 </span>
               </h2>
@@ -492,7 +492,7 @@ export default function Example() {
                     <span className="block text-2xl font-bold text-white">
                       {item.stat}
                     </span>
-                    <span className="mt-1 block text-base text-gray-300">
+                    <span className="block mt-1 text-base text-gray-300">
                       <span className="font-medium text-white">
                         {item.emphasis}
                       </span>{" "}
@@ -507,23 +507,23 @@ export default function Example() {
 
         {/* CTA Section */}
         <div className="bg-white">
-          <div className="max-w-4xl mx-auto py-16 px-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 lg:flex lg:items-center lg:justify-between">
+          <div className="max-w-4xl px-4 py-16 mx-auto sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 lg:flex lg:items-center lg:justify-between">
             <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               <span className="block">Ready to get started?</span>
-              <span className="-mb-1 pb-1 block bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="block pb-1 -mb-1 text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text">
                 Get in touch or create an account.
               </span>
             </h2>
             <div className="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5">
               <a
                 href="#"
-                className="flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700"
+                className="flex items-center justify-center px-4 py-3 text-base font-medium text-white border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border rounded-md shadow-sm hover:from-purple-700 hover:to-indigo-700"
               >
                 Learn more
               </a>
               <a
                 href="#"
-                className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-800 bg-indigo-50 hover:bg-indigo-100"
+                className="flex items-center justify-center px-4 py-3 text-base font-medium text-indigo-800 border border-transparent rounded-md shadow-sm bg-indigo-50 hover:bg-indigo-100"
               >
                 Get started
               </a>
@@ -536,12 +536,12 @@ export default function Example() {
         <h2 id="footer-heading" className="sr-only">
           Footer
         </h2>
-        <div className="max-w-7xl mx-auto pt-16 pb-8 px-4 sm:px-6 lg:pt-24 lg:px-8">
+        <div className="px-4 pt-16 pb-8 mx-auto max-w-7xl sm:px-6 lg:pt-24 lg:px-8">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="grid grid-cols-2 gap-8 xl:col-span-2">
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
-                  <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                  <h3 className="text-sm font-semibold tracking-wider text-gray-400 uppercase">
                     Solutions
                   </h3>
                   <ul role="list" className="mt-4 space-y-4">
@@ -558,7 +558,7 @@ export default function Example() {
                   </ul>
                 </div>
                 <div className="mt-12 md:mt-0">
-                  <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                  <h3 className="text-sm font-semibold tracking-wider text-gray-400 uppercase">
                     Support
                   </h3>
                   <ul role="list" className="mt-4 space-y-4">
@@ -577,7 +577,7 @@ export default function Example() {
               </div>
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
-                  <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                  <h3 className="text-sm font-semibold tracking-wider text-gray-400 uppercase">
                     Company
                   </h3>
                   <ul role="list" className="mt-4 space-y-4">
@@ -594,7 +594,7 @@ export default function Example() {
                   </ul>
                 </div>
                 <div className="mt-12 md:mt-0">
-                  <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                  <h3 className="text-sm font-semibold tracking-wider text-gray-400 uppercase">
                     Legal
                   </h3>
                   <ul role="list" className="mt-4 space-y-4">
@@ -613,7 +613,7 @@ export default function Example() {
               </div>
             </div>
             <div className="mt-12 xl:mt-0">
-              <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+              <h3 className="text-sm font-semibold tracking-wider text-gray-400 uppercase">
                 Subscribe to our newsletter
               </h3>
               <p className="mt-4 text-base text-gray-500">
@@ -630,13 +630,13 @@ export default function Example() {
                   id="email-address"
                   autoComplete="email"
                   required
-                  className="appearance-none min-w-0 w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400"
+                  className="w-full min-w-0 px-4 py-2 text-base text-gray-900 placeholder-gray-500 bg-white border border-gray-300 appearance-none rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400"
                   placeholder="Enter your email"
                 />
                 <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                   <button
                     type="submit"
-                    className="w-full flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-purple-700 hover:to-indigo-700"
+                    className="flex items-center justify-center w-full px-4 py-3 text-base font-medium text-white border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border rounded-md shadow-sm hover:from-purple-700 hover:to-indigo-700"
                   >
                     Subscribe
                   </button>
@@ -644,7 +644,7 @@ export default function Example() {
               </form>
             </div>
           </div>
-          <div className="mt-12 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between lg:mt-16">
+          <div className="pt-8 mt-12 border-t border-gray-200 md:flex md:items-center md:justify-between lg:mt-16">
             <div className="flex space-x-6 md:order-2">
               {footerNavigation.social.map((item) => (
                 <a
@@ -653,7 +653,7 @@ export default function Example() {
                   className="text-gray-400 hover:text-gray-500"
                 >
                   <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
+                  <item.icon className="w-6 h-6" aria-hidden="true" />
                 </a>
               ))}
             </div>

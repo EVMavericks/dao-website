@@ -26,7 +26,7 @@ const FAQ_ITEMS = [
 export const FaqSection: FunctionComponent = () => {
   return (
     <section id="faq" className="bg-white">
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+      <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:py-20 lg:px-8">
         <div className="lg:grid lg:grid-cols-3 lg:gap-8">
           <div>
             <h2 className="text-3xl font-extrabold text-gray-900">
@@ -48,7 +48,7 @@ export const FaqSection: FunctionComponent = () => {
             <dl className="space-y-12">
               {FAQ_ITEMS.map((faq) => (
                 <div key={faq.question}>
-                  <dt className="text-lg leading-6 font-medium text-gray-900">
+                  <dt className="text-lg font-medium text-gray-900 leading-6">
                     {faq.question}
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">{faq.answer}</dd>

@@ -8,11 +8,11 @@ export const Blockquote: FunctionComponent<BlockquoteProps> = ({
 }) => {
   return (
     <blockquote className="relative bg-white rounded-lg shadow-lg">
-      <div className="rounded-t-lg px-6 py-8 sm:px-10 sm:pt-10 sm:pb-8">
+      <div className="px-6 py-8 rounded-t-lg sm:px-10 sm:pt-10 sm:pb-8">
         <TwitterIcon className="absolute -top-1 -left-1 m-4 w-12 h-12 text-[#1d9bf0]" />
-        <div className="relative text-lg text-gray-700 font-medium mt-8">
+        <div className="relative mt-8 text-lg font-medium text-gray-700">
           <svg
-            className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-200"
+            className="absolute top-0 left-0 w-8 h-8 text-gray-200 transform -translate-x-3 -translate-y-2"
             fill="currentColor"
             viewBox="0 0 32 32"
             aria-hidden="true"
@@ -28,23 +28,23 @@ export const Blockquote: FunctionComponent<BlockquoteProps> = ({
           </p>
         </div>
       </div>
-      <cite className="relative flex items-center sm:items-start bg-indigo-600 rounded-b-lg not-italic py-5 px-6 sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10">
-        <span className="relative rounded-full border-2 border-white sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2">
+      <cite className="relative flex items-center px-6 py-5 not-italic bg-indigo-600 rounded-b-lg sm:items-start sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10">
+        <span className="relative border-2 border-white rounded-full sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2">
           <img
-            className="w-12 h-12 sm:w-20 sm:h-20 rounded-full bg-indigo-300"
+            className="w-12 h-12 bg-indigo-300 rounded-full sm:w-20 sm:h-20"
             src="https://pbs.twimg.com/profile_images/1516043447408513024/aYz5ndlh_bigger.jpg"
             alt=""
           />
         </span>
-        <span className="relative ml-4 text-indigo-300 font-semibold leading-6 sm:ml-24 sm:pl-1">
+        <span className="relative ml-4 font-semibold text-indigo-300 leading-6 sm:ml-24 sm:pl-1">
           <a
             href="https://twitter.com/superphiz"
             target="_blank"
-            className="text-white font-semibold sm:inline"
+            className="font-semibold text-white sm:inline"
           >
             superphiz.eth
           </a>
-          <span className="lg:block text-sm">
+          <span className="text-sm lg:block">
             Ethereum Beacon Chain community health consultant
           </span>
         </span>

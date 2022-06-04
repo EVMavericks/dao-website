@@ -62,11 +62,11 @@ const features = [
 export const Features: FunctionComponent = () => {
   return (
     <section id="features" className="bg-indigo-700">
-      <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-white tracking-tight">
+      <div className="max-w-4xl px-4 py-16 mx-auto sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
+        <h2 className="text-3xl font-extrabold tracking-tight text-white">
           Joining the EVMavericks ManeNet DAO
         </h2>
-        <p className="mt-4 max-w-3xl text-lg text-indigo-200">
+        <p className="max-w-3xl mt-4 text-lg text-indigo-200">
           To join our DAO you must own an EVMavericks NFT. You can buy one on{" "}
           <a
             href="https://looksrare.org/collections/0x7dDAA898D33D7aB252Ea5F89f96717c47B2fEE6e"
@@ -88,9 +88,9 @@ export const Features: FunctionComponent = () => {
           {features.map((feature) => (
             <div key={feature.name}>
               <div>
-                <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
+                <span className="flex items-center justify-center w-12 h-12 bg-white rounded-md bg-opacity-10">
                   <feature.icon
-                    className="h-6 w-6 text-white"
+                    className="w-6 h-6 text-white"
                     aria-hidden="true"
                   />
                 </span>

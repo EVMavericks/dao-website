@@ -77,9 +77,9 @@ export type FooterProps = HTMLProps<HTMLDivElement>;
 export const Footer: FunctionComponent<FooterProps> = ({ ...otherProps }) => {
   return (
     <footer className="bg-white">
-      <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+      <div className="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8">
         {/* <nav
-          className="-mx-5 -my-2 flex flex-wrap justify-center"
+          className="flex flex-wrap justify-center -mx-5 -my-2"
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
@@ -93,7 +93,7 @@ export const Footer: FunctionComponent<FooterProps> = ({ ...otherProps }) => {
             </div>
           ))}
         </nav> */}
-        <div className="mt-8 flex justify-center space-x-6">
+        <div className="flex justify-center mt-8 space-x-6">
           {navigation.social.map((item) => (
             <a
               key={item.name}
@@ -102,14 +102,14 @@ export const Footer: FunctionComponent<FooterProps> = ({ ...otherProps }) => {
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6 " aria-hidden="true" />
+              <item.icon className="w-6 h-6 " aria-hidden="true" />
             </a>
           ))}
         </div>
-        <p className="mt-8 text-center text-base text-gray-400">
+        <p className="mt-8 text-base text-center text-gray-400">
           &copy;2022 a ManeNet DAO initiative
         </p>
-        <p className="mt-2 text-center text-2xs text-gray-400">
+        <p className="mt-2 text-sm text-center text-gray-400">
           Built with <HeartIcon className="inline" /> by{" "}
           <a
             href="https://twitter.com/RisingPaw"

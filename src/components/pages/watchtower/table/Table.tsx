@@ -20,7 +20,7 @@ export const Table: FunctionComponent = () => {
   return (
     <div className="relative">
       <div className="px-4 sm:px-6 lg:px-8">
-        <div className="-mx-4 mt-8 overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:-mx-6 md:mx-0 md:rounded-lg">
+        <div className="mt-8 -mx-4 overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:-mx-6 md:mx-0 md:rounded-lg">
           <table className="min-w-full divide-y divide-gray-300">
             <thead className="bg-gray-50">
               <tr>
@@ -50,7 +50,7 @@ export const Table: FunctionComponent = () => {
                 </th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-gray-200 bg-white">
+            <tbody className="bg-white divide-y divide-gray-200">
               {body.data.map((entity) => (
                 <TableItem key={entity.id} entity={entity} />
               ))}

@@ -14,7 +14,7 @@ import { Hero } from "./Hero";
 export const Values: FunctionComponent = () => {
   return (
     <section
-      className="-mt-32 max-w-7xl mx-auto relative z-10 pb-32 px-4 sm:px-6 lg:px-8"
+      className="relative z-10 px-4 pb-32 mx-auto -mt-32 max-w-7xl sm:px-6 lg:px-8"
       aria-labelledby="contact-heading"
     >
       <h2 className="sr-only" id="contact-heading">
@@ -24,11 +24,11 @@ export const Values: FunctionComponent = () => {
         {supportLinks.map((link) => (
           <div
             key={link.name}
-            className="flex flex-col bg-white rounded-2xl shadow-xl"
+            className="flex flex-col bg-white shadow-xl rounded-2xl"
           >
-            <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-              <div className="absolute top-0 p-5 inline-block bg-indigo-600 rounded-xl shadow-lg transform -translate-y-1/2">
-                <link.icon className="h-6 w-6 text-white" aria-hidden="true" />
+            <div className="relative flex-1 px-6 pt-16 pb-8 md:px-8">
+              <div className="absolute top-0 inline-block p-5 bg-indigo-600 shadow-lg transform -translate-y-1/2 rounded-xl">
+                <link.icon className="w-6 h-6 text-white" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-medium text-gray-900">{link.name}</h3>
               <div className="mt-4 text-base text-gray-500">
@@ -47,7 +47,7 @@ export const Values: FunctionComponent = () => {
         ))}
       </div>
 
-      <p className="text-center mt-3 max-w-md mx-auto text-base text-gray-500 md:mt-5 md:text-sm md:max-w-3xl">
+      <p className="max-w-md mx-auto mt-3 text-base text-center text-gray-500 md:mt-5 md:text-sm md:max-w-3xl">
         ManeNet DAO envisions a world with a long-term, self-sufficient, and
         regenerative cryptoeconomic landscape.
       </p>

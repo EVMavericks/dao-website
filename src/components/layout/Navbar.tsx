@@ -14,9 +14,9 @@ export type NavbarProps = HTMLProps<HTMLDivElement>;
 
 export const Navbar: FunctionComponent<NavbarProps> = ({ className = "" }) => {
   return (
-    <div className="relative pt-4 pb-4 z-10">
+    <div className="relative z-10 pt-4 pb-4">
       <Popover>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6">
           <nav
             className="relative flex items-center justify-between sm:h-12 md:justify-center"
             aria-label="Global"
@@ -25,22 +25,22 @@ export const Navbar: FunctionComponent<NavbarProps> = ({ className = "" }) => {
               <div className="flex items-center justify-between w-full md:w-auto">
                 <a
                   href={`${BASE}/`}
-                  className="pr-1 flex flex-row items-center"
+                  className="flex flex-row items-center pr-1"
                 >
                   <span className="sr-only">EVMavericks</span>
                   <img
-                    className="h-8 w-auto sm:h-12 pr-2 fill-green-700 hover:fill-green-600"
+                    className="w-auto h-8 pr-2 sm:h-12 fill-green-700 hover:fill-green-600"
                     src={`${BASE}/assets/evmavericks.svg`}
                     alt=""
                   />
-                  <span className="text-xl tracking-tight font-extrabold text-gray-900 sm:text-2xl md:text-3xl">
+                  <span className="text-xl font-extrabold tracking-tight text-gray-900 sm:text-2xl md:text-3xl">
                     EVMavericks
                   </span>
                 </a>
-                <div className="-mr-2 flex items-center md:hidden">
-                  <Popover.Button className="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <div className="flex items-center -mr-2 md:hidden">
+                  <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-gray-50 rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Open main menu</span>
-                    <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                    <MenuIcon className="w-6 h-6" aria-hidden="true" />
                   </Popover.Button>
                 </div>
               </div>
@@ -57,11 +57,11 @@ export const Navbar: FunctionComponent<NavbarProps> = ({ className = "" }) => {
               ))}
             </div>
             <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
-              <span className="inline-flex rounded-md shadow">
+              <span className="inline-flex shadow rounded-md">
                 <a
                   href="https://github.com/EVMavericks/website-draft-RisingPaw"
                   target="_blank"
-                  className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500"
+                  className="inline-flex items-center px-4 py-2 text-base font-medium text-indigo-600 bg-white border border-transparent rounded-md hover:text-indigo-500"
                 >
                   <GithubIcon />
                   &nbsp;Edit on GitHub
@@ -82,21 +82,21 @@ export const Navbar: FunctionComponent<NavbarProps> = ({ className = "" }) => {
         >
           <Popover.Panel
             focus
-            className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+            className="absolute inset-x-0 top-0 z-10 p-2 transition transform origin-top-right md:hidden"
           >
-            <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-              <div className="px-5 pt-4 flex items-center justify-between">
+            <div className="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
+              <div className="flex items-center justify-between px-5 pt-4">
                 <div>
                   <img
-                    className="h-8 w-auto"
+                    className="w-auto h-8"
                     src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                     alt=""
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Close main menu</span>
-                    <CloseIcon className="h-6 w-6" aria-hidden="true" />
+                    <CloseIcon className="w-6 h-6" aria-hidden="true" />
                   </Popover.Button>
                 </div>
               </div>
@@ -105,7 +105,7 @@ export const Navbar: FunctionComponent<NavbarProps> = ({ className = "" }) => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                    className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
                   >
                     {item.name}
                   </a>
@@ -113,7 +113,7 @@ export const Navbar: FunctionComponent<NavbarProps> = ({ className = "" }) => {
               </div>
               <a
                 href="#"
-                className="block w-full px-5 py-3 text-center font-medium fill-indigo-600 text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700"
+                className="block w-full px-5 py-3 font-medium text-center text-indigo-600 fill-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700"
               >
                 <span className="inline-flex">
                   <GithubIcon />

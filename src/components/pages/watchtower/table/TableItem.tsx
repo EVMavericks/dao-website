@@ -47,11 +47,11 @@ export const TableItem: FunctionComponent<TableItemProps> = ({ entity }) => {
   const url = new URL(meta.website);
   return (
     <tr key={entity.id}>
-      <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-6">
+      <td className="py-4 pl-4 pr-3 text-sm whitespace-nowrap sm:pl-6">
         <div className="flex items-center">
-          <div className="h-10 w-10 flex-shrink-0">
+          <div className="flex-shrink-0 w-10 h-10">
             <img
-              className="h-10 w-10 rounded-full"
+              className="w-10 h-10 rounded-full"
               src={`${BASE}/entities/${meta.icon ? meta.icon : "unknown.svg"}`}
               alt=""
             />
@@ -68,7 +68,7 @@ export const TableItem: FunctionComponent<TableItemProps> = ({ entity }) => {
           </div>
         </div>
       </td>
-      <td className="px-3 py-4 text-sm text-gray-500 hidden sm:table-cell">
+      <td className="hidden px-3 py-4 text-sm text-gray-500 sm:table-cell">
         <div className="py-2">
           <span
             className={`inline-flex rounded-full px-2 text-xs font-semibold leading-5 ${
@@ -93,7 +93,7 @@ export const TableItem: FunctionComponent<TableItemProps> = ({ entity }) => {
           {networkPenetration}% ({entity.validatorCount.toLocaleString()}{" "}
           validators)
         </div>
-        <div className="bg-gray-200 h-2 rounded-md">
+        <div className="h-2 bg-gray-200 rounded-md">
           <div
             className={`${color} h-2 rounded-md`}
             style={{
@@ -102,7 +102,7 @@ export const TableItem: FunctionComponent<TableItemProps> = ({ entity }) => {
           ></div>
         </div>
       </td>
-      <td className="px-3 py-4 text-xs text-gray-500 hidden sm:table-cell">
+      <td className="hidden px-3 py-4 text-xs text-gray-500 sm:table-cell">
         {/* <Icon name="mdi:account" /> */}
         <a
           href={getTweetLink({

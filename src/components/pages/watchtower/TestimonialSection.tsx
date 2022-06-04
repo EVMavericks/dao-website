@@ -4,17 +4,17 @@ import { SquarePattern } from "src/components/design";
 
 export const TestimonialSection: FunctionComponent = () => {
   return (
-    <section className="py-16 bg-gray-50 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
-        <div className="text-base max-w-prose mx-auto lg:max-w-none">
-          <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+    <section className="py-16 overflow-hidden bg-gray-50">
+      <div className="px-4 mx-auto max-w-7xl space-y-8 sm:px-6 lg:px-8">
+        <div className="mx-auto text-base max-w-prose lg:max-w-none">
+          <h2 className="text-base font-semibold tracking-wide text-indigo-600 uppercase">
             The 22% cap signaling
           </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <p className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 leading-8 sm:text-4xl">
             Let's protect Ethereum decentralization
           </p>
         </div>
-        <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
+        <div className="relative z-10 mx-auto text-base max-w-prose lg:max-w-5xl lg:mx-0 lg:pr-72">
           <p className="text-lg text-gray-500">
             @TODO Inspired by{" "}
             <a href="https://twitter.com/superphiz/status/1525218193756807169">
@@ -37,7 +37,7 @@ export const TestimonialSection: FunctionComponent = () => {
         </div>
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
           <div className="relative z-10">
-            <div className="prose prose-indigo text-gray-500 mx-auto lg:max-w-none">
+            <div className="mx-auto text-gray-500 prose prose-indigo lg:max-w-none">
               <p>
                 In the early days of the Beacon Chain at the start of 2021, it
                 seemed as if centralized exchanges like Coinbase and Kraken
@@ -54,26 +54,26 @@ export const TestimonialSection: FunctionComponent = () => {
                 Ethereum, according to Etherscan.
               </p>
             </div>
-            <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
-              <div className="rounded-md shadow">
+            <div className="flex mx-auto mt-10 text-base max-w-prose lg:max-w-none">
+              <div className="shadow rounded-md">
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                  className="flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700"
                 >
                   Tweet your support
                 </a>
               </div>
-              <div className="rounded-md shadow ml-4">
+              <div className="ml-4 shadow rounded-md">
                 <a
                   href="#faq"
-                  className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50"
+                  className="flex items-center justify-center w-full px-5 py-3 text-base font-medium text-indigo-600 bg-white border border-transparent rounded-md hover:bg-gray-50"
                 >
                   Learn more
                 </a>
               </div>
             </div>
           </div>
-          <div className="mt-12 relative text-base max-w-prose mx-auto lg:mt-0 lg:max-w-none">
+          <div className="relative mx-auto mt-12 text-base max-w-prose lg:mt-0 lg:max-w-none">
             <SquarePattern />
             <Blockquote />
           </div>

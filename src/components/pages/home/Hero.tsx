@@ -8,7 +8,7 @@ export const Hero: FunctionComponent = () => {
     <section className="relative pb-32 bg-gray-800">
       <div className="absolute inset-0">
         <img
-          className="w-full h-full object-cover"
+          className="object-cover w-full h-full"
           src={`${BASE}/assets/evmavericks_full.svg`}
           alt=""
         />
@@ -17,9 +17,9 @@ export const Hero: FunctionComponent = () => {
           aria-hidden="true"
         />
       </div>
-      <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+      <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
             <span className="block text-white">
               {/* <a
                 href="https://ethereum.org/en/"
@@ -28,7 +28,7 @@ export const Hero: FunctionComponent = () => {
               >
                 <span className="sr-only">Ethereum</span>
                 <img
-                  className="h-8 w-auto sm:h-12 px-2"
+                  className="w-auto h-8 px-2 sm:h-12"
                   src={`${BASE}/assets/ethereum.svg`}
                   style={{ fillColor: "red" }}
                   alt=""
@@ -38,7 +38,7 @@ export const Hero: FunctionComponent = () => {
             </span>
             <span className="block text-orange-400">ManeNet DAO</span>
           </h1>
-          <div className="max-w-md mx-auto sm:text-lg md:mt-5 md:text-xl md:max-w-3xl text-gray-300">
+          <div className="max-w-md mx-auto text-gray-300 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
             <p className="mt-6">
               ManeNet DAO advances the decentralized Ethereum Web3 ecosystem by
               aligning shared member incentives with funding, developing, and
@@ -50,12 +50,12 @@ export const Hero: FunctionComponent = () => {
                 reliable public goods funding for projects that need it most.
               </p> */}
           </div>
-          <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-            <div className="rounded-md shadow">
+          <div className="max-w-md mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
+            <div className="shadow rounded-md">
               <a
                 href="https://discord.gg/EVMavericks"
                 target="_blank"
-                className="w-full flex items-center justify-center border border-transparent text-base font-medium rounded-md text-white bg-orange-400 hover:bg-orange-500 px-8 py-3 md:px-8 md:py-3 md:text-lg "
+                className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-orange-400 border border-transparent rounded-md hover:bg-orange-500 md:px-8 md:py-3 md:text-lg "
               >
                 <DiscordIcon />
                 &nbsp; Join us on Discord
