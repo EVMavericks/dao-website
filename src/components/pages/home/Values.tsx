@@ -1,9 +1,8 @@
-import React, { FunctionComponent, HTMLProps } from "react";
-import { BASE } from "src/config/env";
+import { FunctionComponent } from "react";
 import BankIcon from "~icons/mdi/bank";
-import SchoolIcon from "~icons/mdi/school";
-import TwitterIcon from "~icons/mdi/twitter";
 import EarthIcon from "~icons/mdi/earth";
+import SchoolIcon from "~icons/mdi/school";
+import { Hero } from "./Hero";
 
 /* This example requires Tailwind CSS v2.0+ */
 // import {
@@ -14,102 +13,45 @@ import EarthIcon from "~icons/mdi/earth";
 
 export const Values: FunctionComponent = () => {
   return (
-    <div className="bg-white">
-      <div className="relative pb-32 bg-gray-800">
-        <div className="absolute inset-0">
-          <img
-            className="w-full h-full object-cover"
-            src={`${BASE}/assets/evmavericks_full.svg`}
-            alt=""
-          />
+    <section
+      className="-mt-32 max-w-7xl mx-auto relative z-10 pb-32 px-4 sm:px-6 lg:px-8"
+      aria-labelledby="contact-heading"
+    >
+      <h2 className="sr-only" id="contact-heading">
+        Contact us
+      </h2>
+      <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
+        {supportLinks.map((link) => (
           <div
-            className="absolute inset-0 bg-gray-800 mix-blend-multiply"
-            aria-hidden="true"
-          />
-        </div>
-        <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-              <span className="block text-white">
-                {/* <a
-                href="https://ethereum.org/en/"
-                target="_blank"
-                className="inline-flex"
+            key={link.name}
+            className="flex flex-col bg-white rounded-2xl shadow-xl"
+          >
+            <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
+              <div className="absolute top-0 p-5 inline-block bg-indigo-600 rounded-xl shadow-lg transform -translate-y-1/2">
+                <link.icon className="h-6 w-6 text-white" aria-hidden="true" />
+              </div>
+              <h3 className="text-xl font-medium text-gray-900">{link.name}</h3>
+              <div className="mt-4 text-base text-gray-500">
+                {link.description()}
+              </div>
+            </div>
+            <div className="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
+              <a
+                href={link.href}
+                className="text-base font-medium text-indigo-700 hover:text-indigo-600"
               >
-                <span className="sr-only">Ethereum</span>
-                <img
-                  className="h-8 w-auto sm:h-12 px-2"
-                  src={`${BASE}/assets/ethereum.svg`}
-                  style={{ fillColor: "red" }}
-                  alt=""
-                />
-              </a> */}
-                EVMavericks
-              </span>
-              <span className="block text-orange-400">ManeNet DAO</span>
-            </h1>
-            <div className="max-w-md mx-auto sm:text-lg md:mt-5 md:text-xl md:max-w-3xl text-gray-300">
-              <p className="mt-6">
-                ManeNet DAO advances the decentralized Ethereum Web3 ecosystem
-                by aligning shared member incentives with funding, developing,
-                and promoting public goods and education.
-              </p>
-              {/* <p className="mt-6">
-                Let's build an ecosystem with a greater symbiotic effect between
-                its protocols and users; one that enables sustainable and
-                reliable public goods funding for projects that need it most.
-              </p> */}
+                {link.caption()}
+              </a>
             </div>
           </div>
-        </div>
+        ))}
       </div>
 
-      {/* Overlapping cards */}
-      <section
-        className="-mt-32 max-w-7xl mx-auto relative z-10 pb-32 px-4 sm:px-6 lg:px-8"
-        aria-labelledby="contact-heading"
-      >
-        <h2 className="sr-only" id="contact-heading">
-          Contact us
-        </h2>
-        <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
-          {supportLinks.map((link) => (
-            <div
-              key={link.name}
-              className="flex flex-col bg-white rounded-2xl shadow-xl"
-            >
-              <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-                <div className="absolute top-0 p-5 inline-block bg-indigo-600 rounded-xl shadow-lg transform -translate-y-1/2">
-                  <link.icon
-                    className="h-6 w-6 text-white"
-                    aria-hidden="true"
-                  />
-                </div>
-                <h3 className="text-xl font-medium text-gray-900">
-                  {link.name}
-                </h3>
-                <div className="mt-4 text-base text-gray-500">
-                  {link.description()}
-                </div>
-              </div>
-              <div className="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-                <a
-                  href={link.href}
-                  className="text-base font-medium text-indigo-700 hover:text-indigo-600"
-                >
-                  {link.caption()}
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <p className="text-center mt-3 max-w-md mx-auto text-base text-gray-500 md:mt-5 md:text-sm md:max-w-3xl">
-          ManeNet DAO envisions a world with a long-term, self-sufficient, and
-          regenerative cryptoeconomic landscape.
-        </p>
-      </section>
-    </div>
+      <p className="text-center mt-3 max-w-md mx-auto text-base text-gray-500 md:mt-5 md:text-sm md:max-w-3xl">
+        ManeNet DAO envisions a world with a long-term, self-sufficient, and
+        regenerative cryptoeconomic landscape.
+      </p>
+    </section>
   );
 };
 
