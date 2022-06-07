@@ -14,7 +14,7 @@
     "@heroicons/react": "^1.0.6",
     "@iconify-json/mdi": "^1.1.19",
     "@svgr/core": "^6.2.1",
-    "astro": "^1.0.0-beta.40",
+    "astro": "^1.0.0-beta.41",
     "prettier-plugin-astro": "^0.0.12",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
