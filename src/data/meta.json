@@ -146,6 +146,15 @@
         "status": "unknown",
         "comment": ""
       }
+    },
+    {
+      "id": "OKex",
+      "website": "https://www.okx.com",
+      "twitter": "okx",
+      "commitment": {
+        "status": "unknown",
+        "comment": ""
+      }
     }
   ]
 }
