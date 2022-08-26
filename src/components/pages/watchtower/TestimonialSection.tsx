@@ -16,7 +16,7 @@ export const TestimonialSection: FunctionComponent = () => {
         </div>
         <div className="relative z-10 mx-auto text-base max-w-prose lg:max-w-5xl lg:mx-0 lg:pr-72">
           <p className="text-lg text-gray-500">
-            @TODO Inspired by{" "}
+            Inspired by{" "}
             <a href="https://twitter.com/superphiz/status/1525218193756807169">
               tweets
             </a>{" "}

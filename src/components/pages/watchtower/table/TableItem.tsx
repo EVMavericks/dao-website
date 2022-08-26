@@ -1,11 +1,13 @@
 import React, { FunctionComponent, HTMLProps } from "react";
-import type entities from "src/data/entities.json";
+import type staticOperators from "src/data/watchtower/operators.json";
 import meta from "src/data/meta.json";
 import TwitterIcon from "~icons/mdi/twitter";
 import { getTweetLink } from "src/utils";
 import { BASE } from "src/config/env";
 
-export type Entity = typeof entities.data[0];
+type OperatorEntityResponse = typeof staticOperators;
+export type Entity = OperatorEntityResponse["data"][0];
+
 const entityMetaById = Object.fromEntries(
   meta.data.map((value) => [value.id, value])
 );
@@ -34,10 +36,19 @@ const commitmentColorClasses = {
 
 export type TableItemProps = {
   entity: Entity;
+  history?: Entity;
 };
 
-export const TableItem: FunctionComponent<TableItemProps> = ({ entity }) => {
+export const TableItem: FunctionComponent<TableItemProps> = ({
+  entity,
+  history,
+}) => {
   const networkPenetration = (entity.networkPenetration * 100).toFixed(2);
+  const networkPenetrationDelta = history?.networkPenetration
+    ? ((entity.networkPenetration - history?.networkPenetration) * 100).toFixed(
+        2
+      )
+    : 0;
   const color =
     colorClasses[getProfileForNetworkPenetration(entity.networkPenetration)];
   const meta = entityMetaById[entity.id];
@@ -79,19 +90,38 @@ export const TableItem: FunctionComponent<TableItemProps> = ({ entity }) => {
             {meta.commitment?.status}
           </span>
         </div>
-        <a
-          className={`block px-2 text-2xs text-gray-500 hover:underline`}
-          title={meta.commitment?.comment}
-          href={`https://twitter.com/${meta.commitment?.tweet}`}
-          target="_blank"
-        >
-          <div className="">{meta.commitment?.date || "?"}</div>
-        </a>
+        {meta.commitment?.date ? (
+          <a
+            className={`block px-2 text-2xs text-gray-500 hover:underline`}
+            title={meta.commitment?.comment}
+            href={`https://twitter.com/${meta.commitment?.tweet}`}
+            target="_blank"
+          >
+            <div className="">{meta.commitment?.date || "?"}</div>
+          </a>
+        ) : null}
       </td>
       <td className="px-3 py-4 text-sm text-gray-500">
         <div className="py-2">
           {networkPenetration}% ({entity.validatorCount.toLocaleString()}{" "}
           validators)
+          {history ? (
+            <span
+              className="pl-1 text-xs text-gray-500"
+              title="from a week ago"
+            >
+              <span
+                className={
+                  networkPenetrationDelta > 0
+                    ? "text-green-700"
+                    : "text-red-700"
+                }
+              >
+                {networkPenetrationDelta > 0 ? "+" : ""}
+                {networkPenetrationDelta}pt
+              </span>
+            </span>
+          ) : null}
         </div>
         <div className="h-2 bg-gray-200 rounded-md">
           <div
