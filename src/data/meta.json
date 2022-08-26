@@ -55,6 +55,7 @@
       "id": "Rocketpool",
       "website": "https://rocketpool.net",
       "twitter": "Rocket_Pool",
+      "icon": "rocketpool.png",
       "commitment": {
         "status": "accepted",
         "comment": "dao",
