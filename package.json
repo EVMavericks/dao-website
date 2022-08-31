@@ -9,12 +9,12 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/react": "^1.0.0",
+    "@astrojs/react": "^1.1.1",
     "@astrojs/tailwind": "^1.0.0",
-    "@heroicons/react": "^2.0.4",
-    "@iconify-json/mdi": "^1.1.30",
+    "@heroicons/react": "^2.0.10",
+    "@iconify-json/mdi": "^1.1.31",
     "@svgr/core": "^6.3.1",
-    "astro": "^1.0.8",
+    "astro": "^1.1.2",
     "prettier-plugin-astro": "^0.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
