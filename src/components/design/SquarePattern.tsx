@@ -1,9 +1,10 @@
 import { FunctionComponent } from "react";
+import { classNames } from "src/utils";
 
-export const SquarePattern: FunctionComponent = () => {
+export const SquarePattern: FunctionComponent = ({ className }) => {
   return (
     <svg
-      className="absolute top-0 right-0 -mt-20 -mr-20 lg:top-auto lg:right-auto lg:bottom-1/2 lg:left-1/2 lg:mt-0 lg:mr-0 xl:top-0 xl:right-0 xl:-mt-20 xl:-mr-20"
+      className={classNames("absolute", className)}
       width={404}
       height={384}
       fill="none"

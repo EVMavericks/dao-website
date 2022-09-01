@@ -1,0 +1,27 @@
+---
+import { Footer, Navbar } from "src/components/layout";
+import {
+  AboutSection,
+  Artwork,
+  Hero,
+  Mint,
+} from "src/components/pages/eipandas";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="EVMavericks • EIPandas">
+  <div class="bg-white">
+    <Navbar client:load />
+    <main class="overflow-hidden bg-gray-50">
+      <Hero />
+      <div
+        class="relative max-w-xl px-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-8 pb-12"
+      >
+        <Mint />
+        <Artwork />
+        <AboutSection />
+      </div>
+    </main>
+  </div>
+  <Footer />
+</Layout>
