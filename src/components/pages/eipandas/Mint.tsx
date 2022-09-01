@@ -1,4 +1,7 @@
-import { CurrencyDollarIcon, ScaleIcon } from "@heroicons/react/24/outline";
+import {
+  CurrencyDollarIcon,
+  ScaleIcon,
+} from "@heroicons/react/24/outline/index.js";
 import { FunctionComponent } from "react";
 import { Link, Strong } from "src/components/content";
 import { SquarePattern } from "src/components/design";

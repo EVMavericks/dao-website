@@ -2,14 +2,6 @@ import { FunctionComponent } from "react";
 import BankIcon from "~icons/mdi/bank";
 import EarthIcon from "~icons/mdi/earth";
 import SchoolIcon from "~icons/mdi/school";
-import { Hero } from "./Hero";
-
-/* This example requires Tailwind CSS v2.0+ */
-// import {
-//   NewspaperIcon,
-//   PhoneIcon,
-//   SupportIcon,
-// } from "@heroicons/react/outline";
 
 export const Values: FunctionComponent = () => {
   return (

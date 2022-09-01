@@ -7,7 +7,7 @@ import {
   GlobeEuropeAfricaIcon,
   ScaleIcon,
   GiftIcon,
-} from "@heroicons/react/24/outline";
+} from "@heroicons/react/24/outline/index.js";
 import { SquarePattern } from "src/components/design";
 import { BASE } from "src/config/env";
 import { Strong, Link } from "src/components/content";
