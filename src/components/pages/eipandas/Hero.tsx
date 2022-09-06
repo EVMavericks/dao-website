@@ -23,9 +23,10 @@ export const Hero: FunctionComponent = () => {
         </h2>
         <p className="max-w-3xl mx-auto mt-4 text-xl text-center text-gray-500">
           The Ethereum Improvement Pandas are putting the "fun" back in
-          non-fungible. <Strong>5,875</Strong> pandas will be available to mint
-          as a way to reward those who contributed to the success of Ethereum
-          transition to Proof-of-Stake.
+          non-fungible.
+          <br />
+          <Strong>5,875</Strong> pandas will be available to mint as a way to
+          celebrate the success of Ethereum's transition to Proof-of-Stake.
         </p>
       </div>
     </section>

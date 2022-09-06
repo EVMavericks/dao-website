@@ -33,9 +33,10 @@ export const AboutSection: FunctionComponent = () => {
                 laugh. Anyways, I hope you mint one, and I hope you like it!
               </p>
               <p className="pb-8">
-                P.S. - There is no planned DAO or discord, and no roadmap for
-                this project. The only official communication will come from the
-                @EIPandas twitter account. -danksharting
+                P.S. - There is no planned DAO and no roadmap for this project.
+                The only official communication will come from the @EIPandas
+                twitter account. You are also welcome to chat on the
+                EVMavericks' discord. -danksharting
               </p>
             </div>
             {/* <div className="flex mx-auto mt-10 text-base max-w-prose lg:max-w-none">

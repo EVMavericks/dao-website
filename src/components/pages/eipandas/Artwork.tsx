@@ -82,7 +82,7 @@ export const Artwork: FunctionComponent = ({ ...otherProps }) => {
             className="relative mx-auto"
             width={438}
             height={438}
-            src={`${BASE}/eipandas/panda_3.png`}
+            src={`${BASE}/eipandas/panda_1.png`}
             alt=""
           />
         </div>

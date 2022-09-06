@@ -21,7 +21,10 @@ const transferFeatures = [
     ),
     caption: (
       <div className="pt-2 text-md">
-        • Date: <Strong>Sep 15</Strong> (Merge day)
+        • Date:{" "}
+        <Link target="_blank" href="https://bordel.wtf">
+          Predicted Sep 15 (Merge day)
+        </Link>{" "}
         <br />
         • Supply: <Strong>5,875</Strong>
         <br />• Price: <Strong>0.003675 ETH</Strong>
@@ -44,7 +47,7 @@ const transferFeatures = [
         <br />• Kiln Testnet Merge Viewers
         <br />• Ropsten Testnet Merge Protocol Supporter
         <br />• Sepolia Testnet Merge Protocol Supporter
-        <br />• EVMavericks NFT holder of the following NFTs as of $DATE,
+        <br />• EVMavericks NFT holder of the following NFTs as of Sep 10,
       </div>
     ),
     icon: ScaleIcon,
