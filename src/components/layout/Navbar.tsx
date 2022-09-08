@@ -8,6 +8,7 @@ import MenuIcon from "~icons/mdi/menu";
 const navigation = [
   { name: "ManeNet", href: `${BASE}/` },
   { name: "WatchTower", href: `${BASE}/watchtower` },
+  { name: "EIPandas", href: `${BASE}/eipandas` },
 ];
 
 export type NavbarProps = HTMLProps<HTMLDivElement>;
