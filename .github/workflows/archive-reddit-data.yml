@@ -1,4 +1,4 @@
-name: archive-api-data
+name: archive-reddit-data
 
 on:
   schedule:
