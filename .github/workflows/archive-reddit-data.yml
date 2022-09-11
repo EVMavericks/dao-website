@@ -20,7 +20,7 @@ jobs:
           ref: data
       - shell: bash
         run: |
-          sudo apt-get update; apt-get install jq -y
+          sudo apt-get update; sudo apt-get install jq -y
           curl -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36' \
             -X GET "https://www.reddit.com/r/ethfinance.json" -o reddit/ethfinance/$(date -u +"%Y%m%d")_posts.json
           DAILY_PERMALINK=$(cat reddit/ethfinance/$(date -u +"%Y%m%d")_posts.json | jq -r '.data.children | map(select(.data.title | test("Daily General Discussion"))) | nth(0) | .data.permalink')
