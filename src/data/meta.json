@@ -156,6 +156,15 @@
         "status": "unknown",
         "comment": ""
       }
+    },
+    {
+      "id": "Abyss",
+      "website": "https://abyss.finance",
+      "twitter": "AbyssFinance",
+      "commitment": {
+        "status": "unknown",
+        "comment": ""
+      }
     }
   ]
 }
