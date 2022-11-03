@@ -165,6 +165,15 @@
         "status": "unknown",
         "comment": ""
       }
+    },
+    {
+      "id": "Celsius Network",
+      "website": "https://celsius.network",
+      "twitter": "CelsiusNetwork",
+      "commitment": {
+        "status": "unknown",
+        "comment": ""
+      }
     }
   ]
 }
