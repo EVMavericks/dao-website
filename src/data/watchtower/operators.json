@@ -33,7 +33,7 @@
           "percentage": 0.1523545706371191
         }
       ],
-      "networkPenetration": 0.3187673576510844
+      "networkPenetration": 0.3151
     },
     {
       "id": "Coinbase",
@@ -62,7 +62,7 @@
           "percentage": 0.12089561021537013
         }
       ],
-      "networkPenetration": 0.14261421431474
+      "networkPenetration": 0.1301
     },
     {
       "id": "Kraken",
@@ -91,7 +91,7 @@
           "percentage": 0.750966370313104
         }
       ],
-      "networkPenetration": 0.08642783746638472
+      "networkPenetration": 0.071
     },
     {
       "id": "Binance",
@@ -117,35 +117,10 @@
         },
         {
           "client": "Prysm",
-          "percentage": 0.6066949014497475
+          "percentage": 0.623
         }
       ],
       "networkPenetration": 0.05108746573764679
-    },
-    {
-      "id": "Bitcoin Suisse",
-      "idType": "entity",
-      "timeWindow": "1d",
-      "validatorCount": 8102,
-      "avgCorrectness": 0.9824162892212537,
-      "avgInclusionDelay": 1.0582855760601981,
-      "avgUptime": 0.6849158551293829,
-      "avgValidatorEffectiveness": 68.53227173269174,
-      "clientPercentages": [
-        {
-          "client": "Prysm",
-          "percentage": 0.0009778994719342852
-        },
-        {
-          "client": "Nimbus",
-          "percentage": 0.12438881283004107
-        },
-        {
-          "client": "Teku",
-          "percentage": 0.8746332876980246
-        }
-      ],
-      "networkPenetration": 0.020970242547695524
     },
     {
       "id": "Rocketpool",
@@ -174,7 +149,32 @@
           "percentage": 0.2293215245927566
         }
       ],
-      "networkPenetration": 0.013976710658794845
+      "networkPenetration": 0.0245
+    },
+    {
+      "id": "Bitcoin Suisse",
+      "idType": "entity",
+      "timeWindow": "1d",
+      "validatorCount": 8102,
+      "avgCorrectness": 0.9824162892212537,
+      "avgInclusionDelay": 1.0582855760601981,
+      "avgUptime": 0.6849158551293829,
+      "avgValidatorEffectiveness": 68.53227173269174,
+      "clientPercentages": [
+        {
+          "client": "Prysm",
+          "percentage": 0.0009778994719342852
+        },
+        {
+          "client": "Nimbus",
+          "percentage": 0.12438881283004107
+        },
+        {
+          "client": "Teku",
+          "percentage": 0.8746332876980246
+        }
+      ],
+      "networkPenetration": 0.0243
     },
     {
       "id": "Staked.us",

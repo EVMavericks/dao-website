@@ -1,6 +1,6 @@
-import React, { FunctionComponent, HTMLProps } from "react";
-import { Blockquote } from "./Blockquote";
+import { FunctionComponent } from "react";
 import { SquarePattern } from "src/components/design";
+import { Blockquote } from "./Blockquote";
 
 export const AboutSection: FunctionComponent = () => {
   return (
@@ -18,25 +18,21 @@ export const AboutSection: FunctionComponent = () => {
           <div className="relative z-10">
             <div className="mx-auto text-gray-500 prose prose-indigo lg:max-w-none">
               <p className="pb-8">
-                First and foremost, this project was made for fun. It
-                incorporates a lot of the memes we've come to know and love. I
-                didn't create these memes, so I'm not looking to profit off of
-                them, which is why the proceeds are directed to ManeNet DAO, who
-                I feel are some of the best contributors in the Ethereum
-                ecosystem.
+                First and foremost, this project was made for fun. It incorporates a lot of the
+                memes we've come to know and love. I didn't create these memes, so I'm not looking
+                to profit off of them, which is why the proceeds are directed to ManeNet DAO, who I
+                feel are some of the best contributors in the Ethereum ecosystem.
               </p>
               <p className="pb-8">
-                I want owning an EIPanda to represent that you were here for the
-                Merge, like a POAP, but personalized to you. That is why the
-                whitelist is primarily made from POAP holders. I also want this
-                to be a project we can look back on years from now, and have a
-                laugh. Anyways, I hope you mint one, and I hope you like it!
+                I want owning an EIPanda to represent that you were here for the Merge, like a POAP,
+                but personalized to you. That is why the whitelist is primarily made from POAP
+                holders. I also want this to be a project we can look back on years from now, and
+                have a laugh. Anyways, I hope you mint one, and I hope you like it!
               </p>
               <p className="pb-8">
-                P.S. - There is no planned DAO and no roadmap for this project.
-                The only official communication will come from the @EIPandas
-                twitter account. You are also welcome to chat on the
-                EVMavericks' discord. -danksharting
+                P.S. - There is no planned DAO and no roadmap for this project. The only official
+                communication will come from the @EIPandas twitter account. You are also welcome to
+                chat on the EVMavericks' discord. -danksharting
               </p>
             </div>
             {/* <div className="flex mx-auto mt-10 text-base max-w-prose lg:max-w-none">

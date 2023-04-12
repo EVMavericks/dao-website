@@ -1,16 +1,14 @@
-import React, { FunctionComponent, HTMLProps } from "react";
-import type staticOperators from "src/data/watchtower/operators.json";
-import meta from "src/data/meta.json";
-import TwitterIcon from "~icons/mdi/twitter";
-import { getTweetLink } from "src/utils";
+import type { FunctionComponent } from "react";
 import { BASE } from "src/config/env";
+import meta from "src/data/meta.json";
+import type staticOperators from "src/data/watchtower/operators.json";
+import { getTweetLink } from "src/utils";
+import TwitterIcon from "~icons/mdi/twitter";
 
 type OperatorEntityResponse = typeof staticOperators;
 export type Entity = OperatorEntityResponse["data"][0];
 
-const entityMetaById = Object.fromEntries(
-  meta.data.map((value) => [value.id, value])
-);
+const entityMetaById = Object.fromEntries(meta.data.map((value) => [value.id, value]));
 
 const colorClasses = {
   danger: "bg-red-600",
@@ -39,18 +37,12 @@ export type TableItemProps = {
   history?: Entity;
 };
 
-export const TableItem: FunctionComponent<TableItemProps> = ({
-  entity,
-  history,
-}) => {
+export const TableItem: FunctionComponent<TableItemProps> = ({ entity, history }) => {
   const networkPenetration = (entity.networkPenetration * 100).toFixed(2);
   const networkPenetrationDelta = history?.networkPenetration
-    ? ((entity.networkPenetration - history?.networkPenetration) * 100).toFixed(
-        2
-      )
+    ? ((entity.networkPenetration - history?.networkPenetration) * 100).toFixed(2)
     : 0;
-  const color =
-    colorClasses[getProfileForNetworkPenetration(entity.networkPenetration)];
+  const color = colorClasses[getProfileForNetworkPenetration(entity.networkPenetration)];
   const meta = entityMetaById[entity.id];
   if (!meta) {
     throw new Error(`Missing meta for ${entity.id}`);
@@ -103,20 +95,10 @@ export const TableItem: FunctionComponent<TableItemProps> = ({
       </td>
       <td className="px-3 py-4 text-sm text-gray-500">
         <div className="py-2">
-          {networkPenetration}% ({entity.validatorCount.toLocaleString()}{" "}
-          validators)
+          {networkPenetration}% ({entity.validatorCount.toLocaleString()} validators)
           {history ? (
-            <span
-              className="pl-1 text-xs text-gray-500"
-              title="from a week ago"
-            >
-              <span
-                className={
-                  networkPenetrationDelta > 0
-                    ? "text-green-700"
-                    : "text-red-700"
-                }
-              >
+            <span className="pl-1 text-xs text-gray-500" title="from a week ago">
+              <span className={networkPenetrationDelta > 0 ? "text-green-700" : "text-red-700"}>
                 {networkPenetrationDelta > 0 ? "+" : ""}
                 {networkPenetrationDelta}pt
               </span>

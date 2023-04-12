@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import type { FunctionComponent } from "react";
 import { Table } from "./Table";
 import { TableFooter } from "./TableFooter";
 
@@ -15,8 +15,7 @@ export const TableSection: FunctionComponent = () => {
         <div className="px-4 mx-auto max-w-7xl sm:px-6">
           <Table />
           <div className="relative py-4 text-sm text-center text-gray-400">
-            Snapshot taken from{" "}
-            <a href="https://rated.network">rated.network</a> API on {DATE}
+            Snapshot taken from <a href="https://rated.network">rated.network</a> API on {DATE}
           </div>
         </div>
       </div>

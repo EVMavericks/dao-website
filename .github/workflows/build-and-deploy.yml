@@ -15,15 +15,18 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
+      - name: Setup pnpm 🔧
+        uses: pnpm/action-setup@v2
         with:
-          node-version: "16.x"
-          cache: "npm"
-
-      - name: Install and Build 🔧
-        run: |
-          npm ci
-          npm run build
-
+          version: 7
+      - name: Setup node 🔧
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+          check-latest: true
+          cache: "pnpm"
+      - name: Install 🪄
+        run: pnpm install --frozen-lockfile
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
