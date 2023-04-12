@@ -1,5 +1,5 @@
 import { Popover, Transition } from "@headlessui/react";
-import { Fragment, FunctionComponent, HTMLProps } from "react";
+import { Fragment, FunctionComponent } from "react";
 import { BASE } from "src/config/env";
 import CloseIcon from "~icons/mdi/close";
 import GithubIcon from "~icons/mdi/github";
@@ -11,9 +11,7 @@ const navigation = [
   { name: "EIPandas", href: `${BASE}/eipandas` },
 ];
 
-export type NavbarProps = HTMLProps<HTMLDivElement>;
-
-export const Navbar: FunctionComponent<NavbarProps> = ({ className = "" }) => {
+export const Navbar: FunctionComponent = () => {
   return (
     <div className="relative z-10 pt-4 pb-4">
       <Popover>
@@ -24,10 +22,7 @@ export const Navbar: FunctionComponent<NavbarProps> = ({ className = "" }) => {
           >
             <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
               <div className="flex items-center justify-between w-full md:w-auto">
-                <a
-                  href={`${BASE}/`}
-                  className="flex flex-row items-center pr-1"
-                >
+                <a href={`${BASE}/`} className="flex flex-row items-center pr-1">
                   <span className="sr-only">EVMavericks</span>
                   <img
                     className="w-auto h-8 pr-2 sm:h-12 fill-green-700 hover:fill-green-600"

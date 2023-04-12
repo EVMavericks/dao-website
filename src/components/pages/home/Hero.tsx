@@ -1,5 +1,4 @@
-import { FunctionComponent } from "react";
-import { DualSquarePattern, SquarePattern } from "src/components/design";
+import type { FunctionComponent } from "react";
 import { BASE } from "src/config/env";
 import DiscordIcon from "~icons/mdi/discord";
 
@@ -12,10 +11,7 @@ export const Hero: FunctionComponent = () => {
           src={`${BASE}/assets/evmavericks_full.svg`}
           alt=""
         />
-        <div
-          className="absolute inset-0 bg-gray-800 mix-blend-multiply"
-          aria-hidden="true"
-        />
+        <div className="absolute inset-0 bg-gray-800 mix-blend-multiply" aria-hidden="true" />
       </div>
       <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
         <div className="text-center">
@@ -40,9 +36,8 @@ export const Hero: FunctionComponent = () => {
           </h1>
           <div className="max-w-md mx-auto text-gray-300 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
             <p className="mt-6">
-              ManeNet DAO advances the decentralized Ethereum Web3 ecosystem by
-              aligning shared member incentives with funding, developing, and
-              promoting public goods and education.
+              ManeNet DAO advances the decentralized Ethereum Web3 ecosystem by aligning shared
+              member incentives with funding, developing, and promoting public goods and education.
             </p>
             {/* <p className="mt-6">
                 Let's build an ecosystem with a greater symbiotic effect between

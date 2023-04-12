@@ -1,11 +1,7 @@
-import React, { FunctionComponent, HTMLProps } from "react";
+import type { FunctionComponent } from "react";
 import TwitterIcon from "~icons/mdi/twitter";
 
-export type BlockquoteProps = HTMLProps<HTMLDivElement>;
-
-export const Blockquote: FunctionComponent<BlockquoteProps> = ({
-  ...otherProps
-}) => {
+export const Blockquote: FunctionComponent = () => {
   return (
     <blockquote className="relative bg-white rounded-lg shadow-lg">
       <div className="px-6 py-8 rounded-t-lg sm:px-10 sm:pt-10 sm:pb-8">
@@ -20,11 +16,10 @@ export const Blockquote: FunctionComponent<BlockquoteProps> = ({
             <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
           </svg>
           <p className="relative">
-            We'll invite entities to commit to not governing more than 22% of
-            the beacon chain, we'll have some, but many will resist. The real
-            goal is coordinating a community standard that says, "We don't
-            support governors who don't respect our chain or its social
-            governance layer."
+            We'll invite entities to commit to not governing more than 22% of the beacon chain,
+            we'll have some, but many will resist. The real goal is coordinating a community
+            standard that says, "We don't support governors who don't respect our chain or its
+            social governance layer."
           </p>
         </div>
       </div>

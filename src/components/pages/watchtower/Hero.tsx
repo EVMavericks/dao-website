@@ -1,6 +1,4 @@
-import { FunctionComponent } from "react";
-import { DualSquarePattern } from "src/components/design";
-import { BASE } from "src/config/env";
+import type { FunctionComponent } from "react";
 
 export const Hero: FunctionComponent = () => {
   return (
@@ -27,8 +25,8 @@ export const Hero: FunctionComponent = () => {
             <span className="block text-indigo-600">public good</span>
           </h1>
           <p className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-            WatchTower tracks staking entities who have committed to cap their
-            scope of control to under 22% of the Ethereum network's validators.
+            WatchTower tracks staking entities who have committed to cap their scope of control to
+            under 22% of the Ethereum network's validators.
           </p>
         </div>
       </div>

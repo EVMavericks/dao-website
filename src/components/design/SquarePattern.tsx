@@ -1,7 +1,9 @@
-import { FunctionComponent } from "react";
+import type { FunctionComponent } from "react";
 import { classNames } from "src/utils";
 
-export const SquarePattern: FunctionComponent = ({ className }) => {
+export type SquarePatternProps = { className?: string };
+
+export const SquarePattern: FunctionComponent<SquarePatternProps> = ({ className }) => {
   return (
     <svg
       className={classNames("absolute", className)}
@@ -20,21 +22,10 @@ export const SquarePattern: FunctionComponent = ({ className }) => {
           height={20}
           patternUnits="userSpaceOnUse"
         >
-          <rect
-            x={0}
-            y={0}
-            width={4}
-            height={4}
-            className="text-gray-200"
-            fill="currentColor"
-          />
+          <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
         </pattern>
       </defs>
-      <rect
-        width={404}
-        height={384}
-        fill="url(#bedc54bc-7371-44a2-a2bc-dc68d819ae60)"
-      />
+      <rect width={404} height={384} fill="url(#bedc54bc-7371-44a2-a2bc-dc68d819ae60)" />
     </svg>
   );
 };

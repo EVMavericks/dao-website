@@ -1,6 +1,6 @@
-import React, { FunctionComponent, HTMLProps } from "react";
-import { Blockquote } from "./Blockquote";
+import type { FunctionComponent } from "react";
 import { SquarePattern } from "src/components/design";
+import { Blockquote } from "./Blockquote";
 
 export const TestimonialSection: FunctionComponent = () => {
   return (
@@ -17,10 +17,7 @@ export const TestimonialSection: FunctionComponent = () => {
         <div className="relative z-10 mx-auto text-base max-w-prose lg:max-w-5xl lg:mx-0 lg:pr-72">
           <p className="text-lg text-gray-500">
             Inspired by{" "}
-            <a href="https://twitter.com/superphiz/status/1525218193756807169">
-              tweets
-            </a>{" "}
-            and{" "}
+            <a href="https://twitter.com/superphiz/status/1525218193756807169">tweets</a> and{" "}
             <a href="https://www.reddit.com/r/ethfinance/comments/unt9m0/comment/i8d1bw9/?utm_source=share&utm_medium=web2x&context=3">
               Reddit posts
             </a>{" "}
@@ -39,18 +36,16 @@ export const TestimonialSection: FunctionComponent = () => {
           <div className="relative z-10">
             <div className="mx-auto text-gray-500 prose prose-indigo lg:max-w-none">
               <p>
-                In the early days of the Beacon Chain at the start of 2021, it
-                seemed as if centralized exchanges like Coinbase and Kraken
-                might be poised to dominate Ethereum staking by making it easy
-                for their massive user bases to pool their ether and earn
+                In the early days of the Beacon Chain at the start of 2021, it seemed as if
+                centralized exchanges like Coinbase and Kraken might be poised to dominate Ethereum
+                staking by making it easy for their massive user bases to pool their ether and earn
                 staking rewards.
               </p>
               <br />
               <p>
-                While centralized exchanges are indeed playing a large role in
-                the ETH staking game, the largest staker on Ethereum's PoS
-                Beacon Chain by far is Lido, a so-called liquid staking pool
-                that has amassed a massive 30% share of all staking activity on
+                While centralized exchanges are indeed playing a large role in the ETH staking game,
+                the largest staker on Ethereum's PoS Beacon Chain by far is Lido, a so-called liquid
+                staking pool that has amassed a massive 30% share of all staking activity on
                 Ethereum, according to Etherscan.
               </p>
             </div>

@@ -1,8 +1,10 @@
-import { FunctionComponent, HTMLProps } from "react";
+import type { FunctionComponent, SVGProps } from "react";
 import DiscordIcon from "~icons/mdi/discord";
 import GithubIcon from "~icons/mdi/github";
 import HeartIcon from "~icons/mdi/heart";
 import TwitterIcon from "~icons/mdi/twitter";
+
+type IconProps = SVGProps<SVGSVGElement>;
 
 const navigation = {
   main: [
@@ -17,22 +19,22 @@ const navigation = {
     {
       name: "Discord",
       href: "https://discord.gg/EVMavericks",
-      icon: (props) => <DiscordIcon {...props} />,
+      icon: (props: IconProps) => <DiscordIcon {...props} />,
     },
     {
       name: "Twitter",
       href: "https://twitter.com/evmavericks",
-      icon: (props) => <TwitterIcon {...props} />,
+      icon: (props: IconProps) => <TwitterIcon {...props} />,
     },
     {
       name: "GitHub",
       href: "https://github.com/EVMavericks",
-      icon: (props) => <GithubIcon {...props} />,
+      icon: (props: IconProps) => <GithubIcon {...props} />,
     },
     {
       name: "LooksRare",
       href: "https://looksrare.org/collections/0x7dDAA898D33D7aB252Ea5F89f96717c47B2fEE6e",
-      icon: (props) => (
+      icon: (props: IconProps) => (
         <svg viewBox="0 0 148 148" {...props}>
           <path
             fill="currentColor"
@@ -52,7 +54,7 @@ const navigation = {
     {
       name: "OpenSea",
       href: "https://opensea.io/collection/evmavericks",
-      icon: (props) => (
+      icon: (props: IconProps) => (
         <svg viewBox="0 0 100 100" {...props}>
           <path
             fill="currentColor"
@@ -72,9 +74,7 @@ const navigation = {
   ],
 };
 
-export type FooterProps = HTMLProps<HTMLDivElement>;
-
-export const Footer: FunctionComponent<FooterProps> = ({ ...otherProps }) => {
+export const Footer: FunctionComponent = () => {
   return (
     <footer className="bg-white">
       <div className="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8">

@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import type { FunctionComponent } from "react";
 import { Link, Strong } from "src/components/content";
 import { BASE } from "src/config/env";
 
@@ -22,11 +22,10 @@ export const Hero: FunctionComponent = () => {
           with a panda!
         </h2>
         <p className="max-w-3xl mx-auto mt-4 text-xl text-center text-gray-500">
-          The Ethereum Improvement Pandas are putting the "fun" back in
-          non-fungible.
+          The Ethereum Improvement Pandas are putting the "fun" back in non-fungible.
           <br />
-          <Strong>5,875</Strong> pandas will be available to mint as a way to
-          celebrate the success of Ethereum's transition to Proof-of-Stake.
+          <Strong>5,875</Strong> pandas will be available to mint as a way to celebrate the success
+          of Ethereum's transition to Proof-of-Stake.
         </p>
       </div>
     </section>

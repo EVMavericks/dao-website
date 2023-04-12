@@ -1,8 +1,9 @@
 name: archive-api-data
 
 on:
-  schedule:
-    - cron: "0 12 * * * " # every day at noon
+  push:
+  # schedule:
+  #   - cron: "0 12 * * * " # every day at noon
 
 permissions:
   contents: write

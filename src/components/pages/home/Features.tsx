@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import type { FunctionComponent } from "react";
 import AccountGroupIcon from "~icons/mdi/account-group";
 import DiscordIcon from "~icons/mdi/discord";
 import GoldIcon from "~icons/mdi/gold";
@@ -47,8 +47,7 @@ const features = [
   },
   {
     name: "Exclusive NFT mints",
-    description:
-      "Gain access to pre-mints for partner projects that have ethos aligned with ours.",
+    description: "Gain access to pre-mints for partner projects that have ethos aligned with ours.",
     icon: PickaxeIcon,
   },
   {
@@ -75,33 +74,22 @@ export const Features: FunctionComponent = () => {
             LooksRare
           </a>{" "}
           or{" "}
-          <a
-            href="https://opensea.io/collection/evmavericks"
-            className="hover:text-indigo-300"
-          >
+          <a href="https://opensea.io/collection/evmavericks" className="hover:text-indigo-300">
             OpenSea
           </a>
-          . Being a member of the EVMavericks family gives you some nice and
-          exclusive features:
+          . Being a member of the EVMavericks family gives you some nice and exclusive features:
         </p>
         <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
           {features.map((feature) => (
             <div key={feature.name}>
               <div>
                 <span className="flex items-center justify-center w-12 h-12 bg-white rounded-md bg-opacity-10">
-                  <feature.icon
-                    className="w-6 h-6 text-white"
-                    aria-hidden="true"
-                  />
+                  <feature.icon className="w-6 h-6 text-white" aria-hidden="true" />
                 </span>
               </div>
               <div className="mt-6">
-                <h3 className="text-lg font-medium text-white">
-                  {feature.name}
-                </h3>
-                <p className="mt-2 text-base text-indigo-200">
-                  {feature.description}
-                </p>
+                <h3 className="text-lg font-medium text-white">{feature.name}</h3>
+                <p className="mt-2 text-base text-indigo-200">{feature.description}</p>
               </div>
             </div>
           ))}

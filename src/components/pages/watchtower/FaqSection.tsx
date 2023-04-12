@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import type { FunctionComponent } from "react";
 
 const FAQ_ITEMS = [
   {
@@ -29,9 +29,7 @@ export const FaqSection: FunctionComponent = () => {
       <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:py-20 lg:px-8">
         <div className="lg:grid lg:grid-cols-3 lg:gap-8">
           <div>
-            <h2 className="text-3xl font-extrabold text-gray-900">
-              Frequently asked questions
-            </h2>
+            <h2 className="text-3xl font-extrabold text-gray-900">Frequently asked questions</h2>
             <p className="mt-4 text-lg text-gray-500">
               Can't find the answer you're looking for? Reach out to us on{" "}
               <a
@@ -48,9 +46,7 @@ export const FaqSection: FunctionComponent = () => {
             <dl className="space-y-12">
               {FAQ_ITEMS.map((faq) => (
                 <div key={faq.question}>
-                  <dt className="text-lg font-medium text-gray-900 leading-6">
-                    {faq.question}
-                  </dt>
+                  <dt className="text-lg font-medium text-gray-900 leading-6">{faq.question}</dt>
                   <dd className="mt-2 text-base text-gray-500">{faq.answer}</dd>
                 </div>
               ))}

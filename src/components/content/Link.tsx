@@ -1,7 +1,9 @@
-import { FunctionComponent } from "react";
+import type { AnchorHTMLAttributes, FunctionComponent, PropsWithChildren } from "react";
 import { classNames } from "src/utils";
 
-export const Link: FunctionComponent<HTMLAnchorElement> = ({
+export type LinkProps = AnchorHTMLAttributes<HTMLAnchorElement>;
+
+export const Link: FunctionComponent<PropsWithChildren<LinkProps>> = ({
   className,
   children,
   target = "_blank",

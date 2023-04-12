@@ -1,7 +1,5 @@
-import { FunctionComponent } from "react";
+import type { FunctionComponent, PropsWithChildren } from "react";
 
-export const Strong: FunctionComponent = ({ children }) => (
-  <span className="font-medium text-indigo-500 font-weight-600">
-    {children}
-  </span>
+export const Strong: FunctionComponent<PropsWithChildren> = ({ children }) => (
+  <span className="font-medium text-indigo-500 font-weight-600">{children}</span>
 );

@@ -1,25 +1,23 @@
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
-import path from "path";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import Icons from "unplugin-icons/vite";
-import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = dirname(__filename);
 
 // https://astro.build/config
 export default defineConfig({
-  // base: "/website-draft-RisingPaw",
-  integrations: [react(), tailwind()],
-  // site: "https://evmavericks.github.io",
+  integrations: [tailwind(), react()],
   site: "https://dao.evmavericks.xyz",
   vite: {
     resolve: {
       alias: [
         {
           find: "src",
-          replacement: path.join(__dirname, "src"),
+          replacement: resolve(__dirname, "src"),
         },
       ],
     },

@@ -1,8 +1,9 @@
 name: archive-reddit-data
 
 on:
-  schedule:
-    - cron: "0 14 * * * " # every day at 2p.m
+  push:
+  # schedule:
+  #   - cron: "0 14 * * * " # every day at 2p.m
 
 permissions:
   contents: write

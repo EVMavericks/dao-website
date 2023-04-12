@@ -1,16 +1,8 @@
-import React, { FunctionComponent, HTMLProps } from "react";
-import {
-  BoltIcon,
-  ChatBubbleBottomCenterTextIcon,
-  CurrencyDollarIcon,
-  EnvelopeIcon,
-  GlobeEuropeAfricaIcon,
-  ScaleIcon,
-  GiftIcon,
-} from "@heroicons/react/24/outline/index.js";
+import { GiftIcon, GlobeEuropeAfricaIcon } from "@heroicons/react/24/outline/index.js";
+import type { FunctionComponent } from "react";
+import { Strong } from "src/components/content";
 import { SquarePattern } from "src/components/design";
 import { BASE } from "src/config/env";
-import { Strong, Link } from "src/components/content";
 
 const communicationFeatures = [
   {
@@ -42,18 +34,15 @@ const communicationFeatures = [
   },
 ];
 
-export const Artwork: FunctionComponent = ({ ...otherProps }) => {
+export const Artwork: FunctionComponent = () => {
   return (
     <div className="relative mt-12 sm:mt-16 lg:mt-24">
       <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:items-center lg:gap-8">
         <div className="lg:col-start-2">
-          <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-            Artwork
-          </h3>
+          <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Artwork</h3>
           <p className="mt-3 text-lg text-gray-500">
-            The Ethereum Improvement Pandas (EIPandas) is a project inspired by
-            the Merge meme where a black bear and a white bear merge into a
-            panda bear.
+            The Ethereum Improvement Pandas (EIPandas) is a project inspired by the Merge meme where
+            a black bear and a white bear merge into a panda bear.
           </p>
 
           <dl className="mt-10 space-y-10">
@@ -63,9 +52,7 @@ export const Artwork: FunctionComponent = ({ ...otherProps }) => {
                   <div className="absolute flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
                     <item.icon className="w-6 h-6" aria-hidden="true" />
                   </div>
-                  <p className="ml-16 text-lg font-medium leading-6 text-gray-900">
-                    {item.name}
-                  </p>
+                  <p className="ml-16 text-lg font-medium leading-6 text-gray-900">{item.name}</p>
                 </dt>
                 <dd className="mt-2 ml-16 text-base text-gray-500">
                   {item.description}
